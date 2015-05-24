@@ -11,7 +11,7 @@ PREFIX sparql: <http://www.w3.org/ns/sparql#>
 PREFIX ut: <http://www.w3.org/2009/sparql/tests/test-update#>
 
 # @SyntaxTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:NegativeSyntaxTest
            || ?type = mf:NegativeSyntaxTest11
@@ -22,16 +22,15 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
 
        ?test mf:action ?queryfile1
        FILTER(!isblank(?queryfile1))
-
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
 };
 
 # @QueryEvaluationTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:QueryEvaluationTest)
 
@@ -41,8 +40,8 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
        OPTIONAL { ?a qt:graphData ?graphfiles1 }
        OPTIONAL { ?test mf:result ?resultfile1 FILTER(!isblank(?resultfile1)) }
 
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
@@ -52,7 +51,7 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
 };
 
 # @UpdateEvaluationTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:UpdateEvaluationTest)
 
@@ -65,8 +64,9 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
        OPTIONAL { ?r1 ut:data ?resultfile2 }
        OPTIONAL { ?r1 ut:graphData [ ut:graph ?resultgraphfiles1; rdfs:label ?resultgraphlabels ] }
        OPTIONAL { ?r1 ut:result ?updateresult }
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 
@@ -78,7 +78,7 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
 };
 
 # @CSVResultFormatTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:CSVResultFormatTest)
 
@@ -87,8 +87,8 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
        OPTIONAL { ?a qt:data ?datafile1 }
        OPTIONAL { ?test mf:result ?resultfile1 FILTER(!isblank(?resultfile1)) }
 
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
@@ -97,21 +97,21 @@ SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlab
 };
 
 # @ProtocolTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:ProtocolTest)
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 };
 
 # @ServiceDescriptionTest
-SELECT ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
+SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:ServiceDescriptionTest)
-       BIND(strbefore(strafter(str(<>), "tests/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "tests/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/tests/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/tests/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 };
