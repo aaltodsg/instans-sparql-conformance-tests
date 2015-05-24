@@ -1,0 +1,71 @@
+#!/bin/bash
+ROOT=`pwd`
+INSTANS_HOME=../instans
+
+# Functions
+function die() {
+    echo $PGM: $*
+    exit 1
+}
+
+function warn() {
+    echo $PGM warning: $*
+    exit 1
+}
+
+function usage () {
+    die "[ -h | --help | --with-instans-home=<path-instans-home-dir> ]"
+}
+
+PGM=$0
+
+while [ $# -gt 0 ] ; do
+    case $1 in
+	-h|--help) usage ;;
+	--with-instans-home=*)
+	  INSTANS_HOME=${1#--with-instans-home=}
+	  test -d "$INSTANS_HOME" -a "$INSTANS_HOME"/bin/instans || die "Did not find INSTANS_HOME"
+	  ;;
+    esac
+    shift
+done
+echo "Using INSTANS_HOME=$INSTANS_HOME"
+TESTS=${ROOT}/tests
+SYNTAX_TEST_RESULTS=${TESTS}/syntax-test-results
+DATATABLES=${SYNTAX_TEST_RESULTS}/DataTables
+cd $TESTS
+if test -d data-r2; then
+    echo "data-r2 already exists, skipping downloading it" > /dev/null
+else
+    echo "Downloading http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz"
+    curl -s -O http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz
+    tar -xzf data-r2.tar.gz test-suite-archive/data-r2
+    echo "Moving test-suite-archive/data-r2 to data-r2"
+    mv test-suite-archive/data-r2 .
+    rm -rf test-suite-archive data-r2.tar.gz
+fi
+if test -d data-sparql11; then
+    echo "data-sparql11 already exists, skipping downloading it" > /dev/null
+else
+    echo "Downloading http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz"
+    curl -s -O http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz
+    tar -xzf sparql11-test-suite-20121023.tar.gz
+    echo "Moving sparql11-test-suite to data-sparql11"
+    mv sparql11-test-suite data-sparql11
+    rm sparql11-test-suite-20121023.tar.gz 
+fi
+mkdir -p ${SYNTAX_TEST_RESULTS}
+if test ! -d $DATATABLES ; then
+  echo
+  echo "Did not find \"$DATATABLES\"; installing it."
+  echo "Downloading http://datatables.net/releases/DataTables-1.9.4.zip"
+  curl -s -O http://datatables.net/releases/DataTables-1.9.4.zip
+  unzip -q -d ${SYNTAX_TEST_RESULTS} DataTables-1.9.4.zip
+  rm DataTables-1.9.4.zip
+  ln -s DataTables-1.9.4 ${SYNTAX_TEST_RESULTS}/DataTables
+  echo "Cloning https://github.com/cyberhobo/ColumnFilterWidgets.git into $DATATABLES/extras"
+  cd $DATATABLES/extras
+  git clone -q https://github.com/cyberhobo/ColumnFilterWidgets.git
+  cd $ROOT
+fi
+echo "Configuration done."
