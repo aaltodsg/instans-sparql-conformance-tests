@@ -31,6 +31,8 @@ query_runnable_implemented_not_ran_file = os.path.join(output_dir, "query-runnab
 query_runnable_implemented_ran_undefined_file = os.path.join(output_dir, "query-runnable-implemented-ran-undefined.csv")
 query_runnable_implemented_ran_not_compared_file = os.path.join(output_dir, "query-runnable-implemented-ran-not-compared.csv")
 query_runnable_implemented_ran_compared_undefined_file = os.path.join(output_dir, "query-runnable-implemented-ran-compared-undefined.csv")
+failed_file = os.path.join(output_dir, "failed.csv")
+failed_undefined_file  = os.path.join(output_dir, "failed_undefined.csv")
 
 # Read inputs
 
@@ -165,4 +167,13 @@ query_runnable_implemented_ran_compared = query_runnable_implemented.select(lamb
 print('                        * {:>3} query runnable evaluation tests implemented ran and compared.'.format(len(query_runnable_implemented_ran_compared)))
 check_counts(query_runnable_implemented_ran_compared, query_runnable_implemented_ran_not_compared, query_runnable_implemented_ran, 24, 'query runnable implemented ran compared', 'query runnable implemented ran not compared', 'query runnable implemented ran', query_runnable_implemented_ran_compared_undefined_file)
 
+print('\nSummary')
+print('\n* {:>4} tests in total'.format(len(all)))
+failed = all.select(lambda r:r['failedp'] == 'True')
+if len(failed) > 0:
+    print('-------> {} tests failed. See {}'.format(len(failed), failed_file))
+    failed.write(failed_file)
+not_failed = all.select(lambda r:r['failedp'] == 'False')
+print('       * {:>3} tests succeeded.'.format(len(not_failed)))
+check_counts(failed, not_failed, all, 6, 'tests failed', 'tests not failed', 'all tests', failed_undefined_file)
 sys.exit(0)
