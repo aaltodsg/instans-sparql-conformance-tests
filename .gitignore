@@ -1,5 +1,5 @@
 tests/data-r2
 tests/data-sparql11
-tests/syntax-test-results
-tests/input/collect-sparql-test-set-info.rq
-tests/sparql-test-set
+tests/input
+tests/output
+tests/save
