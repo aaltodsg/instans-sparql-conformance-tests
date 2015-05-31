@@ -112,6 +112,15 @@ class CSV():
                    [ r1 + r2 for r1 in self.rows for r2 in ( [ r for r in other.rows if test(r1, r) ]
                                                              or [ ['']*len(other.headers) ] ) ] ).project(headers)
 
+    def intersection(self, other):
+        if self.headers != other.headers:
+            raise ValueError("Incompatible tables")
+        rows = []
+        for row in self.rows:
+            if row in other.rows:
+                rows.append(row)
+        return CSV(self.headers, rows)
+
     def union(self, other):
         if self.headers != other.headers:
             raise ValueError("Incompatible tables")
