@@ -59,7 +59,7 @@ statistics: \$(INSTANS_TEST_RESULTS) \$(INSTANS_BIN)
 	\$(INSTANS) --run-sparql-conformance-tests=\$(ROOT)
 
 clean:
-	rm \$(OUTPUT_DIR)/*.csv
+	rm \$(INSTANS_TEST_RESULTS) \$(STATISTICS)/*.csv
 
 force: clean all
 
