@@ -1,5 +1,5 @@
-tests/data-r2
-tests/data-sparql11
-tests/input
-tests/output
-tests/save
+suites/data-r2
+suites/data-sparql11
+suites/results.csv
+suites/tests-from-manifests.csv
+tools/collect-tests-from-manifests.rq
