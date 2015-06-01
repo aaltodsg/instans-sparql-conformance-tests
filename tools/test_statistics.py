@@ -52,10 +52,10 @@ def msg(txt):
 
 refs=[]
 
-def see(file):
+def see(file, prefix=' See '):
     global refs
     refs.append(file)
-    return ' See [{}]'.format(len(refs))
+    return '{}[{}]'.format(prefix, len(refs))
 
 def check_counts(part1, part2, total, indent, dp1, dp2, dtot, difference_file=None):
     diff1=total.minus(part1.union(part2))
@@ -134,8 +134,13 @@ msg('* {} collections with two types.{}'.format(len(suite_collection_double_type
 msg('\nTest execution statistics:')
 msg('\n* {:>4} tests in total'.format(len(all)))
 if len(not_implemented) > 0:
-    msg('--> {} test not executed, because features not implemented in INSTANS.{}'.format(len(not_implemented), see(not_implemented_file)))
+    msg('-------> {} test not executed, because features not implemented in INSTANS.{}'.format(len(not_implemented), see(not_implemented_file)))
 check_counts(implemented, not_implemented, all, 6, 'tests implemented', 'tests not implemented', 'all tests', implemented_undefined_file)
+if len(failed) > 0:
+    msg('-------> {} tests failed.{}'.format(len(failed), see(failed_file)))
+msg('       * {:>3} tests succeeded.'.format(len(not_failed)))
+check_counts(failed, not_failed, all, 6, 'tests failed', 'tests not failed', 'all tests', failed_undefined_file)
+
 
 msg('\nSyntax test execution statistics:')
 msg('\n*{:>4} syntax tests.'.format(len(syntax)))
@@ -183,13 +188,10 @@ if len(query_runnable_implemented_ran_not_compared) > 0:
 msg('                        * {:>3} query runnable evaluation tests implemented ran and compared.'.format(len(query_runnable_implemented_ran_compared)))
 check_counts(query_runnable_implemented_ran_compared, query_runnable_implemented_ran_not_compared, query_runnable_implemented_ran, 24, 'query runnable implemented ran compared', 'query runnable implemented ran not compared', 'query runnable implemented ran', query_runnable_implemented_ran_compared_undefined_file)
 
-msg('\nSummary')
-msg('\n* {:>4} tests in total'.format(len(all)))
-if len(failed) > 0:
-    msg('-------> {} tests failed.{}'.format(len(failed), see(failed_file)))
-msg('       * {:>3} tests succeeded.'.format(len(not_failed)))
-check_counts(failed, not_failed, all, 6, 'tests failed', 'tests not failed', 'all tests', failed_undefined_file)
-msg('\nReferences:')
+msg('\nThis text is saved in {}.'.format(see(output_msgs, prefix='')))
+
+root=os.getcwd()
+msg('\nReferences (relative to {}'.format(root))
 for i in range(len(refs)):
-    msg('[{}] {}'.format(i+1, refs[i]))
+    msg('{:>4} {}'.format('[{}]'.format(i+1), refs[i].replace(root+'/', '')))
 sys.exit(0)
