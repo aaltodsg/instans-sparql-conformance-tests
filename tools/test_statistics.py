@@ -2,12 +2,15 @@
 import os, sys
 from csvtools import *
 
-# Input tables
+if len(sys.argv) != 3:
+    print('usage: {} <test-result-csv> <statistics output dir>'.format(sys.argv[0]))
+    sys.exit(1)
+
+# script inputs
 input_file = sys.argv[1]
+output_dir = sys.argv[2]
 
 # Output tables go to the same directory where input came from
-
-output_dir = os.path.dirname(input_file)
 
 output_msgs = os.path.join(output_dir, "results.txt")
 suite_file = os.path.join(output_dir, "suite.csv")
