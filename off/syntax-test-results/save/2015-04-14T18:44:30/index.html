@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Syntax tests</title>
+<style type="text/css" title="currentStyle">
+  @import "DataTables/media/css/demo_page.css";
+  @import "DataTables/media/css/demo_table.css";
+  @import "DataTables/extras/ColumnFilterWidgets/media/css/ColumnFilterWidgets.css";
+</style>
+<style type="text/css">
+tr.test_positive_failed td.test_type { color: red; }
+tr.test_positive_failed td.test_error { color: red; }
+tr.test_positive_failed td.test_error_message { color: red; }
+tr.test_negative_succeeded td.test_type { color: orange; }
+tr.test_negative_succeeded td.test_error { color: orange; }
+tr.test_negative_succeeded td.test_error_message { color: orange; }
+td.test_passed { }
+</style>
+<script type="text/javascript" src="DataTables/media/js/jquery.js"></script>
+<script type="text/javascript" src="DataTables/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="DataTables/extras/ColumnFilterWidgets/media/js/ColumnFilterWidgets.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready( function () {
+				$('#TestResults').dataTable( { "bPaginate": false, "sDom": 'W<"clear">lfrtip', "oColumnFilterWidgets": { "aiExclude": [ 0, 4, 8 ] } } );
+			} );
+// $(document).ready(function() {
+//        $('#TestResults').dataTable();
+// } );
+//$(document).ready(function() 
+//    { 
+//        $("#TestResults").tablesorter(); 
+//    } 
+//); 
+//]]>
+</script>
+</head>
+<body>
+  <table id="TestResults" cellpadding="0" cellspacing="0" border="0" class="display" width="100%">
+  <thead>
+    <tr><th>Test#</th><th>Type</th><th>Collection</th><th>Set</th><th>Name</th><th>Passed</th><th>Parsing</th><th>Translating</th><th>Error message</th></tr>
+  </thead>
+  <tbody>
+  <tbody>
+  </table>
+<hr/>
+<p>Total 0 tests (previously 0)
+<ul><li>0 tests OK (previously 0)</li>
+<li>0 positive tests failed (previously 0)</li>
+<li>0 negative tests succeeded (previously 0)</li>
+</body>
+</html>

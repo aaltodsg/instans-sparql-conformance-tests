@@ -1,0 +1,960 @@
+
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+NIL,NIL,QueryEvaluationTest,,4:24:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+NIL,NIL,PositiveSyntaxTest,,2:30:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+NIL,NIL,NegativeSyntaxTest,,No legal action for nonterminal SELECTQUERY-9 and input symbol ($ NIL))
+NIL,NIL,NegativeSyntaxTest,,3:18:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;s2&quot;)))
+NIL,NIL,NegativeSyntaxTest,,3:18:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;s2&quot;)))
+NIL,NIL,NegativeSyntaxTest,,3:28:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;o2&quot;)))
+NIL,NIL,NegativeSyntaxTest,,2:4:No legal action for nonterminal GROUPGRAPHPATTERN-88 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:4:No legal action for nonterminal GROUPGRAPHPATTERN-88 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:4:No legal action for nonterminal GROUPGRAPHPATTERN-88 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:15:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:14:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:15:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:14:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:15:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:28:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:4:No legal action for nonterminal GROUPGRAPHPATTERN-88 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,2:3:No legal action for nonterminal GROUPGRAPHPATTERN-88 and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeSyntaxTest,,3:6:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeSyntaxTest,,3:9:No legal action for nonterminal PATHELT-141 and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeSyntaxTest,,3:9:No legal action for nonterminal PATHELT-141 and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeSyntaxTest,,3:14:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeSyntaxTest,,"3:6:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (,-TERMINAL &quot;,&quot;))"
+NIL,NIL,NegativeSyntaxTest,,"3:10:No legal action for nonterminal PATHELT-141 and input symbol (,-TERMINAL &quot;,&quot;))"
+NIL,NIL,NegativeSyntaxTest,,"3:10:No legal action for nonterminal PATHELT-141 and input symbol (,-TERMINAL &quot;,&quot;))"
+NIL,NIL,NegativeSyntaxTest,,3:15:No legal action for nonterminal OBJECTPATH and input symbol (}-TERMINAL &quot;}&quot;))
+NIL,NIL,NegativeSyntaxTest,,3:23:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;o2&quot;)))
+NIL,NIL,NegativeSyntaxTest,,No legal action for nonterminal CONSTRUCTQUERY-18 and input symbol ($ NIL))
+NIL,NIL,NegativeSyntaxTest,,4:20:No legal action for nonterminal MULTIPLICATIVEEXPRESSION-162 and input symbol (IRIREF-TERMINAL #&lt;RDF-IRI http://?a&amp;&amp;?b&gt;))
+NIL,NIL,NegativeSyntaxTest,,No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (ANON-TERMINAL &quot;ANON&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:24:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (BLANK_NODE_LABEL-TERMINAL &quot;_:a&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:38:No legal action for nonterminal EXPRESSION and input symbol (BLANK_NODE_LABEL-TERMINAL &quot;_:x&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:38:No legal action for nonterminal EXPRESSION and input symbol (BLANK_NODE_LABEL-TERMINAL &quot;_:x&quot;))
+NIL,NIL,NegativeSyntaxTest,,No legal action for nonterminal VARORIRI and input symbol (ANON-TERMINAL &quot;ANON&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:21:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,"2:19:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (,-TERMINAL &quot;,&quot;))"
+NIL,NIL,NegativeSyntaxTest,,1:21:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:27:No legal action for nonterminal GROUPGRAPHPATTERN and input symbol (FILTER-TERMINAL &quot;FILTER&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:26:No legal action for nonterminal GROUPGRAPHPATTERN and input symbol (GRAPH-TERMINAL &quot;GRAPH&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:30:No legal action for nonterminal CONSTRAINT and input symbol (VAR1-TERMINAL &quot;?X&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:21:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (}-TERMINAL &quot;}&quot;))
+NIL,NIL,NegativeSyntaxTest,,1:20:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (}-TERMINAL &quot;}&quot;))
+T,T,PositiveSyntaxTest,,
+NIL,NIL,NegativeSyntaxTest,,6:41:Blank node &quot;_:who&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,8:45:Blank node &quot;_:who&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,10:45:Blank node &quot;_:who&quot; used in separate basic graph patterns
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+NIL,NIL,NegativeSyntaxTest,,5:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,5:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,4:36:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,5:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,5:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,8:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,10:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+NIL,NIL,NegativeSyntaxTest,,8:1:Blank node &quot;_:a&quot; used in separate basic graph patterns
+T,T,PositiveSyntaxTest,,
+T,T,PositiveSyntaxTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH :DEFAULT :TO&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH :DEFAULT :TO&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                             #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                             #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                             #&lt;RDF-IRI http://example.org/g3&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :SILENT T :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g4&gt; :TO&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt; :TO :DEFAULT))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :GRAPH&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                             #&lt;RDF-IRI http://example.org/g1&gt;))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,Cannot project (AS #&lt;SPARQL-VAR ?O12&gt;&#xA;                (#&lt;SPARQL-FUNCTION &quot;+&quot; ((A XSD-NUMBER-VALUE) (B&#xA;                                                              XSD-NUMBER-VALUE)) returns XSD-NUMBER-VALUE&gt;&#xA;                 #&lt;SPARQL-VAR ?O1&gt; #&lt;SPARQL-VAR ?O2&gt;))
+T,T,QueryEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?P&gt;
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?P&gt;
+NIL,NIL,NegativeSyntaxTest11,,Cannot project (AS #&lt;SPARQL-VAR ?O12&gt;&#xA;                (#&lt;SPARQL-FUNCTION &quot;+&quot; ((A XSD-NUMBER-VALUE) (B&#xA;                                                              XSD-NUMBER-VALUE)) returns XSD-NUMBER-VALUE&gt;&#xA;                 #&lt;SPARQL-VAR ?O1&gt; #&lt;SPARQL-VAR ?O2&gt;))
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?O1&gt;
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+NIL,NIL,QueryEvaluationTest,,Cannot project (AS #&lt;SPARQL-VAR ?C&gt;&#xA;                (#&lt;SPARQL-FUNCTION &quot;/&quot; ((A XSD-NUMBER-VALUE) (B&#xA;                                                              XSD-NUMBER-VALUE)) returns XSD-NUMBER-VALUE&gt;&#xA;                 (#&lt;SPARQL-FUNCTION &quot;+&quot; ((A XSD-NUMBER-VALUE) (B&#xA;                                                               XSD-NUMBER-VALUE)) returns XSD-NUMBER-VALUE&gt;&#xA;                  (MIN #&lt;SPARQL-VAR ?P&gt;) (MAX #&lt;SPARQL-VAR ?P&gt;))&#xA;                 2))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :DEFAULT))
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH&#xA;                               (:GRAPH #&lt;RDF-IRI http://example.org/g1&gt;)))
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :NAMED))
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :ALL))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,3:24:No legal action for nonterminal OBJECTLIST-124-125 and input symbol (FILTER-TERMINAL &quot;FILTER&quot;))
+NIL,NIL,NegativeSyntaxTest11,,1:14:No legal action for nonterminal CONSTRUCTQUERY-18-24 and input symbol (GRAPH-TERMINAL &quot;GRAPH&quot;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH :DEFAULT :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH :DEFAULT :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO :DEFAULT))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,T,CSVResultFormatTest,,
+T,T,CSVResultFormatTest,,
+T,T,CSVResultFormatTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node not allowed here
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node (_:b) not allowed here
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node not allowed here
+T,T,UpdateEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node not allowed here
+T,T,UpdateEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node not allowed here
+NIL,NIL,NegativeSyntaxTest11,,6:0:Blank node not allowed here
+NIL,NIL,NegativeSyntaxTest11,,3:10:Blank node (_:a) not allowed here
+NIL,NIL,NegativeSyntaxTest11,,3:10:Blank node (_:a) not allowed here
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,T,UpdateEvaluationTest,,
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :DEFAULT))
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :GRAPH&#xA;                              (:GRAPH #&lt;RDF-IRI http://example.org/g1&gt;)))
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :NAMED))
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :ALL))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?V&gt;
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?EVENTNAME&gt;
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH :DEFAULT :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH :DEFAULT :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g2&gt;))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO :DEFAULT))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :GRAPH&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://example.org/g1&gt;))
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/instance#a&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  (INSTANS::SEQ&#xA;                                   #&lt;RDF-IRI http://www.example.org/schema#p1&gt;&#xA;                                   #&lt;RDF-IRI http://www.example.org/schema#p2&gt;&#xA;                                   #&lt;RDF-IRI http://www.example.org/schema#p3&gt;))&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/instance#a&gt;&#xA;                                 (INSTANS::NPS&#xA;                                  #&lt;RDF-IRI http://www.example.org/schema#p1&gt;&#xA;                                  #&lt;RDF-IRI http://www.example.org/schema#p2&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,T,QueryEvaluationTest,,
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/instance#a&gt;&#xA;                                 (INSTANS::ONE-OR-MORE-PATH&#xA;                                  (INSTANS::SEQ&#xA;                                   #&lt;RDF-IRI http://www.example.org/schema#p1&gt;&#xA;                                   #&lt;RDF-IRI http://www.example.org/schema#p2&gt;))&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?0&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://xmlns.com/foaf/0.1/knows&gt;)&#xA;                                 #&lt;SPARQL-VAR ?1&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?0&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://xmlns.com/foaf/0.1/knows&gt;)&#xA;                                 #&lt;SPARQL-VAR ?1&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example/a&gt;&#xA;                                 (INSTANS::ONE-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://example/p&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example/a&gt;&#xA;                                 (INSTANS::ONE-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://example/p&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example/a&gt;&#xA;                                 (INSTANS::ONE-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://example/p&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example/a&gt;&#xA;                                 (INSTANS::ZERO-OR-ONE-PATH&#xA;                                  (INSTANS::SEQ #&lt;RDF-IRI http://example/p&gt;&#xA;                                   #&lt;RDF-IRI http://example/p&gt;))&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/a&gt;&#xA;                                 (INSTANS::ALT&#xA;                                  #&lt;RDF-IRI http://www.example.org/p1&gt;&#xA;                                  (INSTANS::SEQ&#xA;                                   #&lt;RDF-IRI http://www.example.org/p2&gt;&#xA;                                   #&lt;RDF-IRI http://www.example.org/p3&gt;)&#xA;                                  #&lt;RDF-IRI http://www.example.org/p4&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/a&gt;&#xA;                                 (INSTANS::ALT&#xA;                                  #&lt;RDF-IRI http://www.example.org/p1&gt;&#xA;                                  #&lt;RDF-IRI http://www.example.org/p2&gt;)&#xA;                                 #&lt;SPARQL-VAR ?1&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/a&gt;&#xA;                                 (INSTANS::ALT&#xA;                                  #&lt;RDF-IRI http://www.example.org/p0&gt;&#xA;                                  (INSTANS::SEQ&#xA;                                   (INSTANS::INV&#xA;                                    #&lt;RDF-IRI http://www.example.org/p1&gt;)&#xA;                                   #&lt;RDF-IRI http://www.example.org/p2&gt;)&#xA;                                  #&lt;RDF-IRI http://www.example.org/p3&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH&#xA;                                 #&lt;RDF-IRI http://www.example.org/a&gt;&#xA;                                 (INSTANS::ALT&#xA;                                  (INSTANS::SEQ&#xA;                                   (INSTANS::ALT&#xA;                                    #&lt;RDF-IRI http://www.example.org/p0&gt;&#xA;                                    (INSTANS::INV&#xA;                                     #&lt;RDF-IRI http://www.example.org/p1&gt;))&#xA;                                   #&lt;RDF-IRI http://www.example.org/p2&gt;)&#xA;                                  #&lt;RDF-IRI http://www.example.org/p3&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?1&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://www.example.org/p1&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?2&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://www.example.org/p1&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example.org/a0&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://example.org/p&gt;)&#xA;                                 #&lt;RDF-IRI http://example.org/a1&gt;)
+T,NIL,QueryEvaluationTest,,Paths not fully implemented yet (INSTANS::PATH #&lt;RDF-IRI http://example.org/A0&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  (INSTANS::ZERO-OR-MORE-PATH&#xA;                                   #&lt;RDF-IRI http://example.org/P&gt;))&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,QueryEvaluationTest,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?P&gt;
+NIL,NIL,NegativeSyntaxTest11,,Cannot project non-group key var #&lt;SPARQL-VAR ?O&gt;
+NIL,NIL,NegativeSyntaxTest11,,Variable #&lt;SPARQL-VAR ?X&gt; already bound
+NIL,NIL,NegativeSyntaxTest11,,0:0:Expecting AS-TERMINAL instead of )-TERMINAL ((INPUT-TOKEN )-TERMINAL ) 14 479))
+NIL,NIL,NegativeSyntaxTest11,,0:0:No legal action for nonterminal SELECTCLAUSE-12 and input symbol (COUNT-TERMINAL &quot;COUNT&quot;))
+NIL,NIL,NegativeSyntaxTest11,,"0:0:Expecting )-TERMINAL instead of ,-TERMINAL ((INPUT-TOKEN ,-TERMINAL , 14 430))"
+NIL,NIL,NegativeSyntaxTest11,,0:0:No legal action for nonterminal GROUPORUNIONGRAPHPATTERN-105 and input symbol (SELECT-TERMINAL &quot;SELECT&quot;))
+NIL,NIL,NegativeSyntaxTest11,,0:0:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (UNION-TERMINAL &quot;UNION&quot;))
+NIL,NIL,NegativeSyntaxTest11,,0:0:Lexer error: Unrecognized keyword &quot;BINDINGS&quot;
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+NIL,NIL,NegativeSyntaxTest11,,6:2:Variable #&lt;SPARQL-VAR ?O1&gt; already defined in scope
+NIL,NIL,NegativeSyntaxTest11,,8:2:Variable #&lt;SPARQL-VAR ?O1&gt; already defined in scope
+NIL,NIL,NegativeSyntaxTest11,,9:2:Variable #&lt;SPARQL-VAR ?Y&gt; already defined in scope
+T,NIL,PositiveSyntaxTest11,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?1&gt;&#xA;                                 (INSTANS::ALT&#xA;                                  #&lt;RDF-IRI http://www.example.org/p&gt;&#xA;                                  #&lt;RDF-IRI http://www.example.org/q&gt;&#xA;                                  #&lt;RDF-IRI http://www.example.org/r&gt;)&#xA;                                 #&lt;SPARQL-VAR ?0&gt;)
+T,T,PositiveSyntaxTest11,,
+T,T,NegativeSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+NIL,NIL,PositiveSyntaxTest11,,4:0:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,PositiveSyntaxTest11,,4:0:No legal action for nonterminal TRIPLESBLOCKINNER-95-96-97 and input symbol (.-TERMINAL &quot;.&quot;))
+T,T,PositiveSyntaxTest11,,
+T,T,PositiveSyntaxTest11,,
+NIL,NIL,NegativeSyntaxTest11,,1:14:Expecting PNAME_NS-TERMINAL instead of PNAME_LN-TERMINAL ((INPUT-TOKEN&#xA;                                                           PNAME_LN-TERMINAL&#xA;                                                           (ex ex:) 32 330))
+NIL,NIL,NegativeSyntaxTest11,,1:16:Expecting PNAME_NS-TERMINAL instead of PNAME_LN-TERMINAL ((INPUT-TOKEN&#xA;                                                           PNAME_LN-TERMINAL&#xA;                                                           (ex ex:ex) 34 330))
+NIL,NIL,NegativeSyntaxTest11,,1:10:Expecting PNAME_NS-TERMINAL instead of PNAME_LN-TERMINAL ((INPUT-TOKEN&#xA;                                                           PNAME_LN-TERMINAL&#xA;                                                           ( :) 27 330))
+NIL,NIL,NegativeSyntaxTest11,,1:11:Expecting PNAME_NS-TERMINAL instead of PNAME_LN-TERMINAL ((INPUT-TOKEN&#xA;                                                           PNAME_LN-TERMINAL&#xA;                                                           ( a:) 28 330))
+NIL,NIL,NegativeSyntaxTest11,,0:0:Expecting PNAME_NS-TERMINAL instead of INTEGER-TERMINAL ((INPUT-TOKEN&#xA;                                                          INTEGER-TERMINAL 1 8&#xA;                                                          462))
+NIL,NIL,NegativeSyntaxTest11,,3:8:Lexer error: Unexpected escape char &apos;:&apos;
+NIL,NIL,NegativeSyntaxTest11,,0:0:Expecting PNAME_NS-TERMINAL instead of INTEGER-TERMINAL ((INPUT-TOKEN&#xA;                                                          INTEGER-TERMINAL 1 8&#xA;                                                          462))
+NIL,NIL,NegativeSyntaxTest11,,4:0:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest11,,4:0:No legal action for nonterminal PROPERTYLISTPATHNOTEMPTY and input symbol (.-TERMINAL &quot;.&quot;))
+NIL,NIL,NegativeSyntaxTest11,,3:13:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;c&quot;)))
+NIL,NIL,NegativeSyntaxTest11,,3:13:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;c&quot;)))
+NIL,NIL,NegativeSyntaxTest11,,3:15:No legal action for nonterminal OBJECTLISTPATH-134-135 and input symbol (PNAME_LN-TERMINAL (&quot;&quot;&#xA;                                                                                            &quot;c&quot;)))
+NIL,NIL,NegativeSyntaxTest11,,3:12:Unbound prefix &quot;&quot;
+T,NIL,PositiveSyntaxTest11,,Paths not fully implemented yet (INSTANS::PATH #&lt;SPARQL-VAR ?2&gt;&#xA;                                 (INSTANS::ZERO-OR-MORE-PATH&#xA;                                  #&lt;RDF-IRI http://example.org/p&gt;)&#xA;                                 #&lt;SPARQL-VAR ?3&gt;)
+T,NIL,PositiveUpdateSyntaxTest11,,LOAD not implemented yet (in (LOAD :FROM #&lt;RDF-IRI http://example.org/faraway&gt;))
+T,NIL,PositiveUpdateSyntaxTest11,,LOAD not implemented yet (in (LOAD :FROM #&lt;RDF-IRI http://example.org/faraway&gt;))
+T,NIL,PositiveUpdateSyntaxTest11,,LOAD not implemented yet (in (LOAD :FROM #&lt;RDF-IRI http://example.org/faraway&gt;))
+T,NIL,PositiveUpdateSyntaxTest11,,LOAD not implemented yet (in (LOAD :FROM #&lt;RDF-IRI http://example.org/faraway&gt;&#xA;                                   :TO (:GRAPH #&lt;RDF-IRI http:///localCopy&gt;)))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :NAMED))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :DEFAULT))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :ALL))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :GRAPH&#xA;                              (:GRAPH #&lt;RDF-IRI http:///graph&gt;)))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :SILENT T :GRAPH :NAMED))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :SILENT T :GRAPH :DEFAULT))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :SILENT T :GRAPH :ALL))
+T,NIL,PositiveUpdateSyntaxTest11,,DROP not implemented yet (in (INSTANS::DROP :SILENT T :GRAPH&#xA;                              (:GRAPH #&lt;RDF-IRI http:///graph&gt;)))
+T,NIL,PositiveUpdateSyntaxTest11,,CREATE not implemented yet (in (INSTANS::CREATE :GRAPH #&lt;RDF-IRI http:///graph&gt;))
+T,NIL,PositiveUpdateSyntaxTest11,,CREATE not implemented yet (in (INSTANS::CREATE :SILENT T :GRAPH&#xA;                                #&lt;RDF-IRI http:///graph&gt;))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :NAMED))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :DEFAULT))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :ALL))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH&#xA;                               (:GRAPH #&lt;RDF-IRI http:///graph&gt;)))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :SILENT T :GRAPH :NAMED))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :SILENT T :GRAPH :DEFAULT))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :SILENT T :GRAPH :ALL))
+T,NIL,PositiveUpdateSyntaxTest11,,CLEAR not implemented yet (in (INSTANS::CLEAR :SILENT T :GRAPH&#xA;                               (:GRAPH #&lt;RDF-IRI http:///graph&gt;)))
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,NIL,PositiveUpdateSyntaxTest11,,CREATE not implemented yet (in (INSTANS::CREATE :GRAPH #&lt;RDF-IRI http:///g&gt;))
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:6:No legal action for nonterminal _OPTSILENT and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:7:Lexer error: Unrecognized keyword &quot;DEAFULT&quot;
+NIL,NIL,NegativeUpdateSyntaxTest11,,Variables not allowed in DELETE-DATA: (#&lt;SPARQL-VAR ?S&gt; #&lt;RDF-IRI http:///p&gt;&#xA;                                       #&lt;RDF-IRI http:///o&gt;)
+NIL,NIL,NegativeUpdateSyntaxTest11,,Variables not allowed in INSERT-DATA: #&lt;SPARQL-VAR ?G&gt;
+NIL,NIL,NegativeUpdateSyntaxTest11,,4:10:Expecting }-TERMINAL instead of GRAPH-TERMINAL ((INPUT-TOKEN GRAPH-TERMINAL&#xA;                                                 GRAPH 72 441))
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:13:No legal action for nonterminal QUADPATTERN and input symbol (WHERE-TERMINAL &quot;WHERE&quot;))
+NIL,NIL,NegativeUpdateSyntaxTest11,,2:5:No legal action for nonterminal RULES-1-2-4 and input symbol (LOAD-TERMINAL &quot;LOAD&quot;))
+NIL,NIL,NegativeUpdateSyntaxTest11,,2:2:No legal action for nonterminal RULES and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeUpdateSyntaxTest11,,3:2:No legal action for nonterminal RULES and input symbol (;-TERMINAL &quot;;&quot;))
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:22:Blank node (_:a) not allowed here
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:21:Blank node not allowed here
+NIL,NIL,NegativeUpdateSyntaxTest11,,1:21:Blank node (_:a) not allowed here
+T,T,PositiveUpdateSyntaxTest11,,
+T,T,NegativeUpdateSyntaxTest11,,
+T,T,PositiveUpdateSyntaxTest11,,
+T,NIL,UpdateEvaluationTest,,LOAD not implemented yet (in (LOAD :SILENT T :FROM&#xA;                                   #&lt;RDF-IRI somescheme://www.example.com/THIS-GRAPH-DOES-NOT-EXIST/&gt;))
+T,NIL,UpdateEvaluationTest,,LOAD not implemented yet (in (LOAD :SILENT T :FROM&#xA;                                   #&lt;RDF-IRI somescheme://www.example.com/THIS-GRAPH-DOES-NOT-EXIST/&gt;&#xA;                                   :TO&#xA;                                   (:GRAPH #&lt;RDF-IRI http://www.example.org/&gt;)))
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :SILENT T :GRAPH&#xA;                               (:GRAPH #&lt;RDF-IRI http://www.example.org&gt;)))
+T,NIL,UpdateEvaluationTest,,CLEAR not implemented yet (in (INSTANS::CLEAR :GRAPH :DEFAULT))
+T,NIL,UpdateEvaluationTest,,CREATE not implemented yet (in (INSTANS::CREATE :SILENT T :GRAPH&#xA;                                #&lt;RDF-IRI http://example.org/g1&gt;))
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :SILENT T :GRAPH&#xA;                              (:GRAPH #&lt;RDF-IRI http://www.example.org&gt;)))
+T,NIL,UpdateEvaluationTest,,DROP not implemented yet (in (INSTANS::DROP :GRAPH :DEFAULT))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :SILENT T :GRAPH&#xA;                              #&lt;RDF-IRI http://www.example.com/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://www.example.com/g2&gt;))
+T,NIL,UpdateEvaluationTest,,COPY not implemented yet (in (INSTANS::COPY :SILENT T :GRAPH&#xA;                              #&lt;RDF-IRI http://www.example.com/g1&gt; :TO :DEFAULT))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :SILENT T :GRAPH&#xA;                              #&lt;RDF-IRI http://www.example.com/g1&gt; :TO&#xA;                              #&lt;RDF-IRI http://www.example.com/g2&gt;))
+T,NIL,UpdateEvaluationTest,,MOVE not implemented yet (in (INSTANS::MOVE :SILENT T :GRAPH&#xA;                              #&lt;RDF-IRI http://www.example.com/g1&gt; :TO :DEFAULT))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :SILENT T :GRAPH&#xA;                             #&lt;RDF-IRI http://www.example.com/g1&gt; :TO&#xA;                             #&lt;RDF-IRI http://www.example.com/g2&gt;))
+T,NIL,UpdateEvaluationTest,,ADD not implemented yet (in (INSTANS::ADD :SILENT T :GRAPH&#xA;                             #&lt;RDF-IRI http://www.example.com/g1&gt; :TO :DEFAULT))

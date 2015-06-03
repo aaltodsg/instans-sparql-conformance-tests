@@ -1,5 +1,8 @@
 suites/data-r2
 suites/data-sparql11
-suites/results.csv
-suites/tests-from-manifests.csv
+suites/*.csv
+suites/LOG
 tools/collect-tests-from-manifests.rq
+save/20*
+statistics/*.*
+Makefile

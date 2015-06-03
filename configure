@@ -42,6 +42,7 @@ ROOT=$ROOT
 SUITES=$SUITES
 INSTANS_TEST_RESULTS=\$(SUITES)/results.csv
 STATISTICS=$STATISTICS
+LOG=\$(SUITES)/LOG
 
 INSTANS_HOME=$INSTANS_HOME
 INSTANS=\$(INSTANS_HOME)/bin/instans
@@ -52,16 +53,14 @@ all: save statistics
 save:
 	tools/save-results.sh
 
-statistics: \$(INSTANS_TEST_RESULTS) \$(INSTANS_BIN)
+statistics: \$(INSTANS_TEST_RESULTS)
 	tools/test_statistics.py \$(INSTANS_TEST_RESULTS) \$(STATISTICS)
 
-\$(INSTANS_TEST_RESULTS):
-	\$(INSTANS) --run-sparql-conformance-tests=\$(ROOT)
+\$(INSTANS_TEST_RESULTS): \$(INSTANS_BIN)
+	tools/run-tests.sh \$(INSTANS) \$(ROOT) \$(LOG)
 
 clean:
-	rm \$(INSTANS_TEST_RESULTS) \$(STATISTICS)/*.csv
-
-force: clean all
+	-rm \$(INSTANS_TEST_RESULTS) \$(STATISTICS)/*.csv
 
 .PHONY: statistics force
 
