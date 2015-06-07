@@ -48,9 +48,9 @@ INSTANS_HOME=$INSTANS_HOME
 INSTANS=\$(INSTANS_HOME)/bin/instans
 INSTANS_BIN=\$(INSTANS_HOME)/bin/instans.bin
 
-all: save statistics
+all: save-old statistics
 
-save:
+save-old:
 	tools/save-results.sh
 
 statistics: \$(INSTANS_TEST_RESULTS)
@@ -62,7 +62,7 @@ statistics: \$(INSTANS_TEST_RESULTS)
 clean:
 	-rm \$(INSTANS_TEST_RESULTS) \$(STATISTICS)/*.csv
 
-.PHONY: statistics force
+.PHONY: statistics force save-old
 
 EOF
 } > Makefile

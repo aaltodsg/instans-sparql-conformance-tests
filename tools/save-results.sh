@@ -5,6 +5,7 @@ STATISTICS=$ROOT/statistics
 SAVE=$ROOT/save/`date +%Y-%m-%dT%H:%M:%S`
 mkdir -p $SAVE/suites $SAVE/statistics
 cp $SUITES/*.csv $SAVE/suites > /dev/null 2>&1
-cp -a $STATISTICS $SAVE/statistics > /dev/null 2>&1
+cp -a $STATISTICS $SAVE > /dev/null 2>&1
+ln -sf $SAVE $ROOT/save/latest
 
 
