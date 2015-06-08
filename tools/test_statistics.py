@@ -38,6 +38,8 @@ query_runnable_implemented_ran_not_compared_file = os.path.join(output_dir, "que
 query_runnable_implemented_ran_compared_undefined_file = os.path.join(output_dir, "query-runnable-implemented-ran-compared-undefined.csv")
 failed_file = os.path.join(output_dir, "failed.csv")
 failed_undefined_file  = os.path.join(output_dir, "failed_undefined.csv")
+failed_implemented_file = os.path.join(output_dir, "failed-implemented.csv")
+failed_not_implemented_file = os.path.join(output_dir, "failed-not-implemented.csv")
 
 if os.path.exists(output_msgs):
     os.remove(output_msgs)
@@ -111,6 +113,8 @@ query_runnable_implemented_ran_not_compared = query_runnable_implemented.select(
 query_runnable_implemented_ran_compared = query_runnable_implemented.select(lambda r: r['comparing-succeeded-p'] == 'True')
 failed = all.select(lambda r:r['failedp'] == 'True')
 not_failed = all.select(lambda r:r['failedp'] == 'False')
+failed_implemented = all.select(lambda r:r['failedp'] == 'True' and r['implementedp'] == 'True')
+failed_not_implemented = all.select(lambda r:r['failedp'] == 'True' and r['implementedp'] == 'False')
 
 write_non_empty(suite,suite_file)
 write_non_empty(suite_collection,suite_collection_file)
@@ -126,6 +130,8 @@ write_non_empty(query_runnable_implemented_not_ran,query_runnable_implemented_no
 write_non_empty(query_runnable_implemented_ran_different_semantics,query_runnable_implemented_ran_different_semantics_file)
 write_non_empty(query_runnable_implemented_ran_not_compared,query_runnable_implemented_ran_not_compared_file)
 write_non_empty(failed,failed_file)
+write_non_empty(failed_implemented,failed_implemented_file)
+write_non_empty(failed_not_implemented,failed_not_implemented_file)
 
 msg('\nTest suite, collection, and type statistics:')
 msg('* {} tests.{}'.format(len(all), see(input_file)))
@@ -141,6 +147,8 @@ if len(not_implemented) > 0:
 check_counts(implemented, not_implemented, all, 6, 'tests implemented', 'tests not implemented', 'all tests', implemented_undefined_file)
 if len(failed) > 0:
     msg('-------> {} tests failed.{}'.format(len(failed), see(failed_file)))
+    msg('             * {} tests failed and were not implemented.{}'.format(len(failed_not_implemented), see(failed_not_implemented_file)))
+    msg('-------------> {} tests failed and were implemented.{}'.format(len(failed_implemented), see(failed_implemented_file)))
 msg('       * {:>3} tests succeeded.'.format(len(not_failed)))
 check_counts(failed, not_failed, all, 6, 'tests failed', 'tests not failed', 'all tests', failed_undefined_file)
 
