@@ -6,3 +6,4 @@ tools/collect-tests-from-manifests.rq
 save/20*
 statistics/*.*
 Makefile
+save/latest
