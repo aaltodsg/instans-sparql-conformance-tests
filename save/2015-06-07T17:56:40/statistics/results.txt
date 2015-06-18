@@ -1,0 +1,66 @@
+
+Test suite, collection, and type statistics:
+* 1011 tests. See [1]
+* 2 test suites. See [2]
+* 61 test collections. See [3]
+* 12 types. See [4]
+* 9 collections with two types. See [5]
+
+Test execution statistics:
+
+* 1011 tests in total
+-------> 74 test not executed, because features not implemented in INSTANS. See [6]
+-------> 434 tests failed. See [7]
+            * 74 tests failed and were not implemented. See [8]
+       * 577 tests succeeded.
+
+Syntax test execution statistics:
+
+* 974 syntax tests.
+      * 106 negative syntax tests.
+------------>  13 negative syntax tests unexpectedly parsed! See [9]
+            *  93 negative syntax tests did not parse.
+      * 868 positive syntax tests.
+-------------> 17 positive syntax tests did not parse! See [10]
+            * 848 positive syntax tests parsed.
+=============> len(positive syntax):868 > 865 = len(positive syntax not parsed):17 + len(positive syntax parsed):848! See [11]
+------------------>  86 positive syntax tests parsed, but did not translate! See [12]
+                  * 762 positive syntax tests parsed and translated.
+------------------------>   4 positive syntax tests parsed and translated, but did not initialize! See [13]
+                        * 758 positive syntax tests parsed, translated and initialized.
+
+Query evalution test execution statistics:
+
+* 613 query evaluation tests.
+------>  77 query evaluation tests not runnable (not parsed, translated, or initialized)! See [14]
+      * 536 query evaluation tests runnable (parsed, translated, initialized).
+------------>  34 runnable query evaluation tests with non-implemented operations in INSTANS! See [15]
+            * 502 query_runnable evaluation tests fully implemented in INSTANS.
+                  * 485 query runnable evaluation tests implemented and ran.
+===================> len(query runnable implemented):502 > 485 = len(query runnable implemented ran):485 + len(query runnable implemented not ran):0! See [16]
+------------------------> 240 query runnable evaluation tests fully implemented in INSTANS, ran, but dit not compare! See [17]
+                        * 245 query runnable evaluation tests implemented ran and compared.
+                        *   4 query runnable evaluation tests implemented, ran and have different semantics. See [18]
+
+This text is saved in [19].
+
+References (relative to /Users/enu/aalto-dsg/instans-sparql-conformance-tests
+ [1] suites/results.csv
+ [2] statistics/suite.csv
+ [3] statistics/suite-collection.csv
+ [4] statistics/type.csv
+ [5] statistics/suite-collection-double-type.csv
+ [6] statistics/not-implemented.csv
+ [7] statistics/failed.csv
+ [8] statistics/failed-not-implemented.csv
+ [9] statistics/negative-syntax-parsed.csv
+[10] statistics/positive-syntax-not-parsed.csv
+[11] statistics/positive-syntax-parsed-undefined.csv
+[12] statistics/positive-syntax-parsed-not-translated.csv
+[13] statistics/positive-syntax-parsed-translated-not-initialized.csv
+[14] statistics/query-not-runnable.csv
+[15] statistics/query-runnable-not-implemented.csv
+[16] statistics/query-runnable-implemented-ran-undefined.csv
+[17] statistics/query-runnable-implemented-ran-not-compared.csv
+[18] statistics/query-runnable-implemented-ran-different-semantics.csv
+[19] statistics/results.txt
