@@ -8,10 +8,13 @@ INSTANS_HOME=/Users/enu/aalto-dsg/instans
 INSTANS=$(INSTANS_HOME)/bin/instans
 INSTANS_BIN=$(INSTANS_HOME)/bin/instans.bin
 
-all: save-old statistics
+all: save-old instans-info statistics
 
 save-old:
 	tools/save-results.sh
+
+instans-info:
+	tools/instans-info.sh $(INSTANS_HOME) $(INSTANS) $(INSTANS_BIN) $(STATISTICS)
 
 statistics: $(INSTANS_TEST_RESULTS)
 	tools/test_statistics.py $(INSTANS_TEST_RESULTS) $(STATISTICS)
