@@ -8,7 +8,12 @@ INSTANS_HOME=/Users/enu/aalto-dsg/instans
 INSTANS=$(INSTANS_HOME)/bin/instans
 INSTANS_BIN=$(INSTANS_HOME)/bin/instans.bin
 
-all: save-old instans-info statistics
+all: save-old instans-info statistics compare-to-prev
+
+full: makeinstans save-old instans-info statistics
+
+makeinstans:
+	(cd $(INSTANS_HOME); make)
 
 save-old:
 	tools/save-results.sh
@@ -22,8 +27,11 @@ statistics: $(INSTANS_TEST_RESULTS)
 $(INSTANS_TEST_RESULTS): $(INSTANS_BIN)
 	tools/run-tests.sh $(INSTANS) $(ROOT) $(LOG)
 
+compare-to-prev:
+	-tools/compare-results.sh
+
 clean:
 	-rm $(INSTANS_TEST_RESULTS) $(STATISTICS)/*.csv
 
-.PHONY: statistics force save-old
+.PHONY: statistics force save-old makeinstans full
 
