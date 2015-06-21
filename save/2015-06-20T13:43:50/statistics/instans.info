@@ -1,0 +1,3725 @@
+=============================
+INSTANS_HOME=/Users/enu/aalto-dsg/instans
+INSTANS=/Users/enu/aalto-dsg/instans/bin/instans
+INSTANS_BIN=/Users/enu/aalto-dsg/instans/bin/instans.bin
+=============================
+ls -l /Users/enu/aalto-dsg/instans/bin/instans.bin:
+
+-rwxr-xr-x  1 enu  staff  101449776 20 Kes 12:44 /Users/enu/aalto-dsg/instans/bin/instans.bin
+=============================
+/Users/enu/aalto-dsg/instans/bin/instans --version:
+
+INSTANS version 0.3.0.0
+=============================
+git branch:
+
+  hashtable-fix
+* lisp-triples
+  master
+  parser-stacks
+=============================
+git status:
+
+On branch lisp-triples
+Your branch is up-to-date with 'origin/lisp-triples'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/main/main.lisp
+	modified:   src/parser/lisp-parser.lisp
+	modified:   src/rete/instans-io.lisp
+	modified:   src/rete/interpreter.lisp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	src/e1.lisp
+	src/e2.lisp
+	src/el1.lisp
+	src/el2.lisp
+	src/tests/tmp.lisp
+	tests/input/CloseFriends/5actors10000events.lisp
+	tests/input/allevents1.lisp
+	tests/input/allevents2.lisp
+	tests/input/passthrough.rq
+
+no changes added to commit (use "git add" and/or "git commit -a")
+=============================
+git log:
+
+commit 919a61c260d1990c865e2dfcc51e2207f47ac5bc
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 20 00:43:38 2015 +0300
+
+    Now can both read and write statements and block in Lisp. 586 tests still passed
+
+commit 7c6d5f2abadb16b2f3a06f638f474cb0007e362d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 20 00:40:19 2015 +0300
+
+    Now can both read and write statements and block in Lisp. 586 tests still passed
+
+commit 83bcacd3ed1b06b29fad765c992d05d1bcb98eb7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 23:13:41 2015 +0300
+
+    Fixed creation of *rdf-XXX* variables. Now uses parse-iri, so that all components of rdf-iri are set. Tests 586 OK as before
+
+commit eae4fbc4f617159faaef03ffc5d6e91deb06afaa
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 01:44:08 2015 +0300
+
+    .
+
+commit 355809acae5484e84a823b48cab7d31db10757fb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 01:40:03 2015 +0300
+
+    Refactored field ll-parser-parse back to method parse
+
+commit 80b94a6422e71ee295ca88085d074dd948df907f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 01:36:12 2015 +0300
+
+    Refactored lisp-parsers. Still all 586 tests work
+
+commit 26bfc7a19f8c75daac2dea616bca0ccbde58ab14
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 01:22:44 2015 +0300
+
+    Added ll-parser-parse field to parser and made lisp-parser classes
+
+commit 0e9adf2ccb6068e7496a7170c24dc02fc400ffa1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 01:13:26 2015 +0300
+
+    Even more. Still works
+
+commit 0d2372b8e71dbc7944527ac991f102832d0f95c3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 00:47:04 2015 +0300
+
+    Even more functionality
+
+commit 0aa43ce411ac8bf7633e07fd4e9f2cb0a9c7d9e8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 19 00:31:16 2015 +0300
+
+    Added functionality. Now testing
+
+commit 09558f41827ca842fc611d09b66d2ecf86375a35
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 18 23:42:40 2015 +0300
+
+    .
+
+commit 4ccdf6907ee9d90d597e6a2fd687699ed2d70d9b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 18 16:25:09 2015 +0300
+
+    .
+
+commit 150398ea8dcdc181ad485fa6677893d198a379d8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 18 16:20:05 2015 +0300
+
+    Before hashtable and parser stack fixes (will be in two branches). 586 tests OK
+
+commit e4e91cff4f15500a6f53f1c49c770284e6c9f9dd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 18 16:17:48 2015 +0300
+
+    .
+
+commit 368e700344c6ddd04bd786db3a759adca0ee26e4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 11 01:39:12 2015 +0300
+
+    .
+
+commit 259f2f1844794225c9c4679db6567577c7bf1bdf
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 10 23:17:38 2015 +0300
+
+    .
+
+commit bff68bfc7b00e61b375b7c08950b4b81bc6569a5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 8 23:21:32 2015 +0300
+
+    .
+
+commit 95725a6a2814fd33ca46522e80cf3506bc0c1ae6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 4 18:50:16 2015 +0300
+
+    Fixed errors in test results comparisons. Now 458 test succeed
+
+commit 63504fc908fcf53e6f291c1766ccff23f2f52455
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 2 01:04:33 2015 +0300
+
+    .
+
+commit 588b730bbd66e91d7ab06eed199d6950fa0b3d3f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 1 17:17:27 2015 +0300
+
+    .
+
+commit 0cd96d02d58b1a6edcb470dc620f3fd79b69e02a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 1 00:28:29 2015 +0300
+
+    .
+
+commit 2f487a1833b102de579cca73d012d04e346bc48c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 31 17:53:14 2015 +0300
+
+    Added option --run-sparql-conformance-tests
+
+commit 667d0bfa44c2936047e8939a90dea9d93fcb8daf
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 31 13:03:53 2015 +0300
+
+    .
+
+commit 92d7692f2004b12c41f209227b6977b5418c674f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat May 30 00:09:04 2015 +0300
+
+    .
+
+commit 5b6545f5205f9db96a8a5bab4e54c4cbc554501b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 29 17:02:32 2015 +0300
+
+    .
+
+commit f0cb94a6652fd4432c23032ff6a2db6c96ee729e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue May 26 15:23:40 2015 +0300
+
+    .
+
+commit a1c4aa7adf5d4a46b33fc07f2b4744beae74a649
+Merge: 9575c64 41c93ee
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue May 26 13:26:55 2015 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 9575c64b718ef22150f735e7edc25b4033f5d10d
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue May 26 13:26:33 2015 +0300
+
+    Improved evaluation of command line arguments.
+
+commit 41c93eedfd38a5fccd89ddfc69d7b0059aa9c5c8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue May 26 00:01:40 2015 +0300
+
+    More testing code
+
+commit 12b7819c56d951d01a9a0097167562b09b0e7e20
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 25 19:00:44 2015 +0300
+
+    .
+
+commit d9dacf92fd2a89b0bd52619cc2275aa7844ce555
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 25 00:44:10 2015 +0300
+
+    .
+
+commit 1329fe71f2e0ac99697a2258d261522c3ee45798
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 24 23:00:31 2015 +0300
+
+    .
+
+commit efc64ec22e714c423ab23c974195663d9c08b8d9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 24 16:47:58 2015 +0300
+
+    .
+
+commit 67204ed8879329c54e8e3dc8b8aaf85d70a31116
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 22 19:20:09 2015 +0300
+
+    .
+
+commit b0531fd5b5c6549e393074d4c1fcafdf5d6dd836
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 23:58:30 2015 +0300
+
+    Added install-quicklisp
+
+commit 6e684536191eac66919cce199b22501fe4260cf6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 23:45:38 2015 +0300
+
+    Changed sh to bash in configure
+
+commit 3b1a4ad40250cd9fa90cd509766727d1fb22abbf
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 18:03:06 2015 +0300
+
+    Changed version to 0.3.0.0
+
+commit bdd5505ac3d242a84c844d71ee75908e69f95c9a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 14:15:45 2015 +0300
+
+    .
+
+commit 66f53526b5e21baf249d891e3c2f174d803e083d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 14:14:38 2015 +0300
+
+    .
+
+commit a19f3a4f7819cf45a60a89e03017554a26ae89d9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 14:09:47 2015 +0300
+
+    New ./configure script, which creates Makefile
+
+commit acfe5a23328057fe7521fa4a9b97cd540352ec8e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 12:29:36 2015 +0300
+
+    Simplified Makefile
+
+commit 239573665b530951b1b4b35c12d1bb3ba35fd96c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 15 00:07:51 2015 +0300
+
+    .
+
+commit 3981404b8271d4763a366a3b9541b00e7d8a2b96
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 14 12:30:17 2015 +0300
+
+    .
+
+commit f6a3c56dbcecc55de356d0acf21d516daf82575e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 13 19:11:27 2015 +0300
+
+    Temporary fix to trig parsing memory problem. Still unnecessarily adds states and nils to stack and result stack
+
+commit 5d5e2457609039aff1b0d09dedc4226994f3c0ed
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 7 13:08:27 2015 +0300
+
+    Changed instans to use build.sh instead of configure
+
+commit 7bae15dd37ea32277874e3be9e725e31a6e83a41
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 6 23:04:33 2015 +0300
+
+    New build.sh script with option --dynamic-space-size (same as in sbcl)
+
+commit 300cb08055f22829e58bbd37c65c95e5617e2aca
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 6 22:55:30 2015 +0300
+
+    New build.sh script with option --dynamic-space-size (same as in sbcl)
+
+commit c1c8ed74935500df3990a7e1fe8b27d1b9f70909
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue May 5 15:00:33 2015 +0300
+
+    Fixed dependencies that prevented instans from compiling
+
+commit 4b6261a02ba7988af21daaa0e7ec0c384fdb992d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Apr 12 22:43:16 2015 +0300
+
+    Implemented commend line parameters --pause and --system
+
+commit fd103db88cc808b9a4f012e62dd0e3542e548533
+Merge: 55f2280 3fa0127
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 18 16:40:14 2014 +0200
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 55f2280214a63310ffa6b55d9075effb99573f3c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 18 16:40:05 2014 +0200
+
+    .
+
+commit 3fa012710b34630ecb3e7130209195bc37e20092
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 16:33:42 2014 +0200
+
+    Some updates to the main README.md file.
+
+commit 49bad6ec53b9b5bad823f6364ab4af137e7b03c2
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 16:01:31 2014 +0200
+
+    Restored aggr-window with guidance of the new location of the example.
+
+commit e45e6273c11eaef77c3d143f6d1fd0e3d1f27db0
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 15:52:41 2014 +0200
+
+    Some more README.md:s added to guide people to the new dedicated repositories for the examples.
+
+commit bfc10de1458fc1ae7cdb8b89e21927b2032ee913
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 15:31:11 2014 +0200
+
+    Migrated tests/input/aggr-window to dedicated repository instans-windowlibrary.
+
+commit b7e3986d044f9e968058ac8e3b3b51f1675d3442
+Merge: a2eeb6a 5a67d1c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 14:21:24 2014 +0200
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit a2eeb6a090c3d76167a9c4e2204e7d4d80589dc0
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 18 14:21:07 2014 +0200
+
+    CEP2SPARQL example migrated to dedicated repository, README.md updated to contain the link.
+
+commit 5a67d1c521e9977de49ddb4302e8e84f2e32d53c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Dec 13 20:22:26 2014 +0200
+
+    Test parsing finally ready?
+
+commit c4e772990d778290672db3186a3d080465ee51b8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 12 19:41:48 2014 +0200
+
+    .
+
+commit 6990ea670080773cd36b6f645fd7d4521935e58a
+Merge: 34971f1 0763345
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Dec 12 09:09:53 2014 +0200
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 34971f1f66cb4fa5cebe580066bbd1d174eb6038
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Dec 12 09:09:40 2014 +0200
+
+    Minor updates to couplecount.
+
+commit 0763345d2cdf7d226c48d1bff4c001f6d02595c9
+Merge: f20f631 0aca526
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 10 20:25:52 2014 +0200
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit f20f631a658e876fdba585b57e1f40bbe059466e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 10 20:25:23 2014 +0200
+
+    .
+
+commit 0aca526665e15f9b5d00d6cbb039e364178dcdfc
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Dec 10 11:50:18 2014 +0200
+
+    Typo fix in prefix, aligning variables with original query.
+
+commit 03c931ca41be7e10e0d56970ee5982b74cee557c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Dec 9 23:03:23 2014 +0200
+
+    Added the samplerun file for couplecount.
+
+commit 2ec6dab605f50900ee08d353815db5c8e3b38864
+Merge: a1df369 ac6f389
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Dec 9 21:55:20 2014 +0200
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit a1df369f73f8362caaf967c174e66582eb48a6c3
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Dec 9 21:54:52 2014 +0200
+
+    Added the couplecount example from RSP CG.
+
+commit ac6f389f993413c073eecb7670581613e71a71cb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 9 20:05:34 2014 +0200
+
+    Continued tests
+
+commit 7adefd60307ff3b8fb93693c088abc1c99f50eec
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 9 13:40:07 2014 +0200
+
+    .
+
+commit 1242f339ca01b446c83e4bd35eb74aff8e8f2765
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 8 17:22:19 2014 +0200
+
+    Added dir tests/input/removing-two-ways. There test4.rq contains the correct version
+
+commit 0e9e79f6ae3f8655e9837229b6a6ee982b263e03
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 7 19:27:45 2014 +0200
+
+    .
+
+commit 0d2de292783f4093cf4270ddb8283f6a5bb35715
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 3 13:03:36 2014 +0200
+
+    .
+
+commit 9bdb28baf557bfbb476a8a5b827d1405b7274a28
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 3 13:01:15 2014 +0200
+
+    .
+
+commit f574954ef61beae23de52cf5512b57ba64be4cf0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 3 12:58:40 2014 +0200
+
+    Made EPA3 to use actual SERVICE query
+
+commit 14d63f0201e434da4eb9bd7635e4d13fa954f4c5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 18:32:15 2014 +0200
+
+    .
+
+commit f55b0448875a2d9737f33bd0986951998627f417
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 18:14:46 2014 +0200
+
+    .
+
+commit 71d162da2367180be82f220be99fe3dcdfb14da9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 18:08:04 2014 +0200
+
+    SERVICE query working with the example in tests/input/dataaalto.fi and tests/input/query-parameters-for-dataaalto.ttl
+
+commit 4f0d840c467b6f80445d41015e29de855b8cd6c0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 18:06:16 2014 +0200
+
+    .
+
+commit 27fdaf55d64ef8ca6194b272cb0073a7a0948c14
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 17:44:00 2014 +0200
+
+    .
+
+commit d2c064d5b3af0dd4736ae690a2b3da9d1ae82b36
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 16:14:06 2014 +0200
+
+    .
+
+commit b447b75c245fae81c5ff8a878fbcc68684ac1d5a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 30 15:08:56 2014 +0200
+
+    .
+
+commit f83a66d272e33065c70a896028dc73a8791a675e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Nov 27 17:34:45 2014 +0200
+
+    .
+
+commit e6bf63072c6af759c3bb73b0b8ac9add713f4c08
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 25 15:18:21 2014 +0200
+
+    .
+
+commit d0b464a8fba222f9882d9fe42e121895eb18de22
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 22 19:11:10 2014 +0200
+
+    .
+
+commit 7625e22dd87b7e070bbe50b71e42435cf18b0729
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 22 19:10:48 2014 +0200
+
+    .
+
+commit eddb50ed234f2bf510fccf5da6e7e1d355de4040
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 22 17:06:14 2014 +0200
+
+    .
+
+commit d2c5c1337265c63d59aa404c7ecf1855db2fe493
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 22 15:44:55 2014 +0200
+
+    .
+
+commit ef9edd9356530d3f891695da2ad4f69d0778650e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 22 14:22:09 2014 +0200
+
+    .
+
+commit b8ec973c6ed1d1a77303142bf0f0d9c66ec887c2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Nov 20 16:31:08 2014 +0200
+
+    .
+
+commit 325643445b13c2c6322ad287510da4f5766fea3b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 19 20:18:53 2014 +0200
+
+    .
+
+commit bf6d4f1a0d8d19a31353a44e4a0befca286c1b28
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Nov 18 17:16:01 2014 +0200
+
+    Fixed the instans-script to accept paths with spaces.
+
+commit 92c033913ee0cbdf36505b3847ea2590c41d5470
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 18 15:09:52 2014 +0200
+
+    .
+
+commit 43b218cafa9cdbbec8bf54424be454a904520eee
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Nov 17 18:08:24 2014 +0200
+
+    .
+
+commit 5ab3bc1fda5f1ae3abe3bbd2a31711d4d0ab6f30
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Nov 13 20:31:55 2014 +0200
+
+    .
+
+commit 8abe0738ce41a9fa81c1c0c6918caac4c4b97b74
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Nov 13 15:36:22 2014 +0200
+
+    .
+
+commit b3cff91818812dc53ef14904f29c8d521bb64cdf
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 12 16:37:54 2014 +0200
+
+    .
+
+commit 1bf20c16eed88ebc3c422b002495209fc127ae59
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:32:01 2014 +0200
+
+    .
+
+commit d9315e5b62c436a3a3aee2b42ac0fbd66e874d38
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:29:50 2014 +0200
+
+    .
+
+commit c7c677a08b992b25b747e0a5f6cb8e756d539e14
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:27:15 2014 +0200
+
+    .
+
+commit 56c969a47dbe73d3cd514ac1ef52488d1505ba80
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:12:04 2014 +0200
+
+    .
+
+commit 0a1ce5ad039b35a2a3e603bebf6b0d1960ee1a88
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:09:54 2014 +0200
+
+    .
+
+commit 90ce2e95ee8c678a79e64b946f2b1a577a533e84
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 11 18:02:23 2014 +0200
+
+    Started new test system
+
+commit 4d61dab66828c85be14ea003cc99d90d522e3ca7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 9 22:56:47 2014 +0200
+
+    .
+
+commit 1b11eec4391f831f9fb65b481b25c1251bb6b04c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 9 16:27:51 2014 +0200
+
+    .
+
+commit 522818f16b64e5bf0b7d81f4e8be4f36f0af048c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 8 14:53:19 2014 +0200
+
+    .
+
+commit 5663ad72f2990db1ca094531f45b6b5d8924ddf9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Nov 3 18:27:53 2014 +0200
+
+    Now generates a nice table for the test results
+
+commit c7f0880bd14acadf6b30b122aa608699de254a4b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 1 18:26:33 2014 +0200
+
+    .
+
+commit 0311bfda38b353c1349256a8e52f863f50ef09cd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Oct 31 20:26:54 2014 +0200
+
+    .
+
+commit 3df6f6a205068474c0a4aae5b4f49a3a079ade33
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 30 18:16:16 2014 +0200
+
+    .
+
+commit 49d3e3805a1c07ccd2fe939e1205682fda6ae2d0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 30 18:01:16 2014 +0200
+
+    Continue testing
+
+commit 535d0d875f1921434de03a029af3ad4edddb8581
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Oct 25 13:02:18 2014 +0300
+
+    .
+
+commit dd619449092b53cbe3c642e6235907305d144701
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Oct 17 17:50:04 2014 +0300
+
+    .
+
+commit c99c8b86812b7e76993f6ce243393c3e5aba880d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Oct 17 17:49:28 2014 +0300
+
+    Continue testing. Now 458 OK
+
+commit 77761ae4ddaa3b77b150040ad36b9b626e8eeecd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 9 19:21:36 2014 +0300
+
+    .
+
+commit 8adef63d1b22f37227c454a47e75fd62dc2f965e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 9 18:01:37 2014 +0300
+
+    Now runs all tests without crashing. Not correctly, though
+
+commit 63b1451b6b92ca7009943dc8739eb731e03839f1
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Oct 9 12:44:17 2014 +0300
+
+    Compiled with Ubuntu, added configure_linux as a Linux-version and fixed output-configuration.lisp to accept debian versions of sbcl.
+
+commit 1e410551c6a204839955c2897fbf80dfb5b7ac8f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Oct 8 17:27:42 2014 +0300
+
+    Continue testing
+
+commit 3fd6e1494dc34dec8a62da2a9595b493f9bc223f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Oct 6 16:48:50 2014 +0300
+
+    Continued SPARQL test suite running. Problem in MINUS
+
+commit 4a045bc628eec3617813b0710cd4488cf70d4264
+Merge: 6fc23bc 5fcd038
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Oct 1 10:24:41 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 6fc23bc653a2efd22f81f84b7b4e5a7a2f282264
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Oct 1 10:24:30 2014 +0300
+
+    Fixed a warning
+
+commit 5fcd038270dac41608cf28bd57c10c689ef4d2e8
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Sep 30 15:58:25 2014 +0300
+
+    Some more silent testing options for CEP2SPARQL/TriG
+
+commit 6b5fa5d595bc202150716024435273d7c5bac2de
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Sep 26 20:28:44 2014 +0300
+
+    .
+
+commit b1e554bbbd145d6ac549f824b46cbdcb3ee4dda2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Sep 26 20:27:23 2014 +0300
+
+    Continued testing
+
+commit 5a715d9c17d6359c7dd1c04959a3fc5f5b99af2b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Sep 24 17:01:16 2014 +0300
+
+    Started testing expr-builtin
+
+commit 26c9bae5058103488bae7fb64a4eda339ccb83c0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Sep 19 19:06:32 2014 +0300
+
+    data-r2/basic tests execute correctly except for term-6
+
+commit a0d67a5d6bc36280a48477d52f844ad526c8cae7
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Sep 18 16:41:35 2014 +0300
+
+    Added a running sample text to CEP2SPARQL.
+
+commit 8a15a538a79bd5cba227c27bc2fdf6c7f7e820a3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Sep 18 16:04:11 2014 +0300
+
+    Implemented and tested SRX reading/writing/comparing
+
+commit ffa74e423c0df0a76a7208eccbe03bbb8d485e60
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Sep 14 21:45:34 2014 +0300
+
+    SRX parsing
+
+commit d1aee53758a8fb2d070b0b8b629aa8d7766cf7b0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Sep 12 19:01:21 2014 +0300
+
+    Implemented SELECT output in SPARQL XML result set format (.srx)
+
+commit 1e69b58f0d1857257a7f3b4ff71399afca9b9cf2
+Author: Mikko Rinne <mrinne@iki.fi>
+Date:   Tue Sep 9 18:37:27 2014 +0300
+
+    Update README.md
+    
+    Clean-up for the formatting.
+
+commit 0902cd6334eb1edbc4dbf1d9bbd906ca1ca82e79
+Merge: 488850d f2a4a1d
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Sep 9 18:27:39 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 488850d9a850af14e057ca1d22c4e40b3afa2f66
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Sep 9 18:27:18 2014 +0300
+
+    Updated the CEP2SPARQL folder with the up-to-date TriG-based example.
+
+commit f2a4a1db836749f45e5efbc9a2a8b78988f5be9b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Sep 8 17:02:37 2014 +0300
+
+    Bug fix for flush rdf op testing. Added recompilation to instans shell script
+
+commit 80444b1909c005aa054a6f9bd1f0011f06e3b104
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Aug 21 17:39:21 2014 +0300
+
+    Combined EPA-All working with TriG input using double SampleEvents.
+
+commit a68d562f77d5fe6456df74c6d66a2861e590330e
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Aug 21 16:20:06 2014 +0300
+
+    Cleaning up CEP2SPARQL TriG-cases.
+
+commit baa3fc147396c93f2bf4bfdec1d64374b964e08d
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Aug 21 16:07:22 2014 +0300
+
+    Completed TriG-based EPA8, all individual TriG-cases now tested with double SampleEvents.
+
+commit ded4b627ff5e2d51c5b5cf70231a36836027550b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 15:25:50 2014 +0300
+
+    EPA7 TriG test files added.
+
+commit b4b2e882d59dcc4e48b0185178ab47d4d9c66054
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 12:53:02 2014 +0300
+
+    EPA6v3 added to further optimize query lines.
+
+commit c4ff7980882f838360268622a7986b5d808143c6
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 12:34:25 2014 +0300
+
+    .
+
+commit a37ca5f2677cc9ff3360e390fe28a10742b567dc
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 12:19:12 2014 +0300
+
+    Added slight more optimised EPA6v2.
+
+commit e63aaa5fa4701d23c4b2d5201804fe41b33c8923
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 11:45:39 2014 +0300
+
+    .
+
+commit 751b64435ef8915bc1534db2d6b7763ef8f59cee
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 11:42:36 2014 +0300
+
+    .
+
+commit 7a2716250e740f89cd5f33f9433b5f84e3a0d1f5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Aug 20 11:35:24 2014 +0300
+
+    Added TriG-version of EPA6, updates to others.
+
+commit c6b38938ec2de3accb81cf72ed1cf423dc091aa1
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Aug 19 18:21:59 2014 +0300
+
+    TriG-based EPA1-5 created, combination of EPA1+2 not working yet.
+
+commit a8a7474ebb93b68526a2b1507c7e2676f1a52020
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Aug 19 10:15:54 2014 +0300
+
+    Fixed problem in CEP2SPARQL_SampleEvents.trig.
+
+commit 49229a6843507832e807897044bc700f62dd7bec
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Aug 19 09:34:42 2014 +0300
+
+    Aligned EPA1.rq with last working one (one placement of curved brace difference).
+
+commit c847fb5269d476ef015bd05d2da2f44a66f6dc92
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Aug 18 13:06:56 2014 +0300
+
+    Updates to EPA1 and EPA2 TriG versions - currently not working.
+
+commit b06bbd4817a59b158900044666a1c56af84c2e12
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Aug 17 17:28:55 2014 +0300
+
+    Continued epa.lisp
+
+commit 9e943687c2e5e33975ab02c9c7e621273e46f6c1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 23:34:47 2014 +0300
+
+    Added epa.lisp for developing multi-instans EPA
+
+commit c090d876bcf6d87e5eeba5aa7163480c3285c1e1
+Merge: c79e083 f837cfc
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 20:05:32 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit c79e083084b1af37c06394d71e74109360578340
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 20:05:25 2014 +0300
+
+    .
+
+commit f837cfcd695a4d1a961e7713076d9259f038c882
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 18:29:27 2014 +0300
+
+    TriG-version of EPA1 initially working.
+
+commit e95d96f5edb38a288b4e5343599e1c35c60c3dcc
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:19:59 2014 +0300
+
+    .
+
+commit 4c6e7ff7449f80fde253cefe8faafcdde4abd68a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:18:31 2014 +0300
+
+    .
+
+commit c8ee6a0d10e06d4a5689a692c8fd32739ef92c1a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:13:00 2014 +0300
+
+    .
+
+commit 2bc025f2b043e4979f7a2e82e61bef5a89945f52
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:12:19 2014 +0300
+
+    .
+
+commit 8ab3cbe29d53da1363c43415e1a5f78555b1e576
+Merge: 4e50fab 22531fb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:02:09 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 4e50fab744da7b73a38ee2e08582727c8dae770d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 18:01:13 2014 +0300
+
+    .
+
+commit 22531fb8e6494ca92766b1c73afa7707cd56d6f9
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 17:41:10 2014 +0300
+
+    Fixed a problem in SampleEvents2TriG.rq, causing event duplication.
+
+commit 7577609d77665e851c103b4ed8e1efb85ec734a3
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 17:29:39 2014 +0300
+
+    .
+
+commit 56b0c7517ebaad5ab3a8d59dcb059fbc41582bca
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 17:26:40 2014 +0300
+
+    .
+
+commit b1ac0fd430e054ed7e76b88fe571c8ec50952f22
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 17:25:15 2014 +0300
+
+    Fixed indentation in trig output
+
+commit 861984fbfd00f9104fd1f0d7ddacf814fd7b9443
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 15 16:53:53 2014 +0300
+
+    .
+
+commit 4adf6f95eb4401879972e7dc9083d487e1f954f0
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 14:48:11 2014 +0300
+
+    .
+
+commit a050f16d49ec617c000d048785763785ce3b0fb3
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Aug 15 14:45:20 2014 +0300
+
+    Testing the use of TriG.
+
+commit cf97b31e7e7f3143d046c8093d3dd17614d30a9e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Aug 14 17:51:06 2014 +0300
+
+    .
+
+commit 47e7653619d8bb83118b9d712b9cf8ef2e1d0859
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Aug 14 17:06:45 2014 +0300
+
+    Adding some new query files to cep2sparql-testing
+
+commit a47e60653776aae54cfb0b4bf579d3155d932520
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 13 20:48:14 2014 +0300
+
+    .
+
+commit 92af352bd28fc30113e613576c983bb334ea793f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 13 20:27:03 2014 +0300
+
+    Construct template seems to work
+
+commit 263b8e141989a492c3aca821d5ce1facfa3327fa
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 13 18:34:29 2014 +0300
+
+    Fixed(?) blank node handling in construct template
+
+commit 539ea5c566eb80a96e5165887592da41e5a6bafe
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 23:01:33 2014 +0300
+
+    .
+
+commit fea443a5c0e159fcfacd1972cacb433c3772a2cb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 22:53:44 2014 +0300
+
+    Played with EPA
+
+commit 7032e80e35491682b44cdc6b8da08439db3ae10f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 18:45:48 2014 +0300
+
+    Added named blank node mapping
+
+commit 2a87120af72993eac3ea82545d2d05fb1221a762
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 11:14:30 2014 +0300
+
+    Preparing for blank mapping
+
+commit 8d22502a6ce542c897f8158ac715881e4804e025
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 11:06:12 2014 +0300
+
+    More cleaning
+
+commit 94b371b66fe09c04ada60f9d2ac9bfcd5f0433fd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 10:40:56 2014 +0300
+
+    Added more specific classes for input processors for different RDF types
+
+commit 619265d614cdf18148b5f25826ba82169d8ef8d1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 10:21:11 2014 +0300
+
+    IO changes completed. Passes tests/make and input/cep2sparql-testing/queries/EPA[1-7]test.sh
+
+commit c9c0554cc05ad9d8c565dfeae4660a856f1feb73
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 07:51:51 2014 +0300
+
+    Renaming OK
+
+commit 2281e469561d16adc3593cb7979519d8588bbed7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 07:26:50 2014 +0300
+
+    More name changes. OK
+
+commit 76bc7f02d91f0b9f0ef5eab05f9e98b7f989b785
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 12 07:18:03 2014 +0300
+
+    Changed some names. OK
+
+commit 9a339afff20c9fcc7a274571a90cbfac38e8df54
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Aug 9 15:03:50 2014 +0300
+
+    New output processor in use
+
+commit 4689471488ac77dc50facc82ec65eb1ae00f571f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Aug 7 19:08:39 2014 +0300
+
+    Added new construct output processing. It is not in use by default; find variable *newio* and set it to T to use the new version
+
+commit 5edef1e0bac1f57b1a9d5d2f2d2826681192a1f7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 6 14:57:02 2014 +0300
+
+    Started integrating new construct output
+
+commit fa4d556d15519b29c2e84062cccc0fda791f750f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 6 10:58:36 2014 +0300
+
+    .
+
+commit 01c876e04fbebf83e1b4bcdcefc0f5e728509365
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Aug 6 10:36:59 2014 +0300
+
+    Refactored new io classes to a new file rete-io
+
+commit b3de2cdaf09ed7cc89bc969f9f0803bef7517f23
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Aug 5 15:13:40 2014 +0300
+
+    .
+
+commit bda0d32aac3d22b6a04513a53e04f3cd30cdbbda
+Merge: 15a5c82 e1278ce
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Aug 4 15:14:24 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 15a5c8215c152437a342e3c9e970e5b47439d63e
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Aug 4 15:14:15 2014 +0300
+
+    Updated readme to point to wiki for instructions, removed the older PDF-file.
+
+commit e1278cedb41b7c0b50344d39f3cdd7d43e2ac9e7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Aug 4 14:54:35 2014 +0300
+
+    .
+
+commit 9ab7f1ebafbbbbaa9d0839e7f5d0a32dcf03ec41
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 1 17:24:10 2014 +0300
+
+    .
+
+commit 632c17a91833566821d13710f831814fb8ab9662
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 1 12:28:51 2014 +0300
+
+    .
+
+commit 35253e51e3efe59448b93014f9a4cb5dd5fabb68
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 1 12:11:16 2014 +0300
+
+    Added trie.lisp
+
+commit 2829b227b531e45a8bdc12cc16272d9bf4be005d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Aug 1 11:57:25 2014 +0300
+
+    .
+
+commit e2a7ea3a21925918e09e8593397b8fd93c741a76
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 31 23:56:08 2014 +0300
+
+    Added files that were used for debugging EPA1
+
+commit 8ed7365ccdea9f690b063310b3917854cebc3857
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 31 23:50:55 2014 +0300
+
+    Fixed (hopefully) a problem in remove-token for exists-start/end-node. The code for exists-start-node called remove-token for children of exists-end-node  even, when add-token never was called for the same token. Further, remove-token did not check, whether the token already was removed, because we expected that this would not be possible. There may still be problems with this code
+
+commit e6b8f442832f01357165521a2b8749a09626c76a
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jul 31 16:49:54 2014 +0300
+
+    Added tests and isolated queries for cep2sparql EPA5-7.
+
+commit 22937bcc84e17161eb8cd2e37b750dbc375fbbfa
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 30 16:54:53 2014 +0300
+
+    Testing CEP2SPARQL/EPA2 with new policies.
+
+commit b23d04095952e499f91c67e5209267c891dd7f8a
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 30 16:32:50 2014 +0300
+
+    More test cases for cep2sparql.
+
+commit 439c7f4ce34aed4a128ebf89fa1bf95befdfee3b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jul 28 14:55:22 2014 +0300
+
+    Uncommented the cleanup queries in CEP2SPARQL_Queries
+
+commit 9e09c1a48364e322647be242ea08cee34987a85c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jul 28 14:41:29 2014 +0300
+
+    Enhancements to CEP2SPARQL README.md
+
+commit d86c918d2764b2e9a75cff8082514889666777b3
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jul 28 14:36:06 2014 +0300
+
+    Moved the older CEP2SPARQL to a new cep2sparql-testing directory. Set up a new CEP2SPARQL with clear minimum content and a readme file.
+
+commit 777af2e7439253370edd51d6063597bcc216fd86
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jul 7 19:09:19 2014 +0300
+
+    .
+
+commit 41e98ab14e83f777a709af84f134d98945cc72b7
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Sat Jul 5 18:28:40 2014 +0300
+
+    Added i5sensors1event.ttl to git.
+
+commit 98ce89c418c89d32a5ab685da32b53037f41a32a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jul 5 17:34:25 2014 +0300
+
+    .
+
+commit 473610c976189d8eb464764d62b0e5f216bded59
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jul 5 14:47:25 2014 +0300
+
+    Small bug in explicit-delete-EPA1.sh fixed
+
+commit f721f56b44bcff191f322fd79f9556c9277cdcb3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jul 5 14:38:08 2014 +0300
+
+    Renamed flush-EPA1.* to explicit-delete-EPA1.*
+
+commit 818551d850f58e92dd3d7574c2fc79d0320b9a4f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jul 5 14:33:11 2014 +0300
+
+    New version flush-EPA1.rq/sh in tests/input/CEP2SPARQL/queries. No garbage, outputs the expected number of events.
+
+commit 1db5ca5c0a4b20d9ce7c61838ecff20ac7c959f7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jul 5 13:15:03 2014 +0300
+
+    New RDF operations 'flush'
+
+commit 1ea0bea7683c704db180ee41d225b9f98beb3d7b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 18:56:40 2014 +0300
+
+    .
+
+commit 8be31625034c4f7854c837705f0c8aa5f765a1cd
+Merge: 165bf2c 74f475f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 18:09:13 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 165bf2ca85fe3e7e0e6c56a988b20ccaf0a467dd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 18:09:06 2014 +0300
+
+    .
+
+commit 74f475fd740d699a3feef993640b2cc7f0255e03
+Merge: f5f69a4 c4cfd2b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 17:56:52 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit f5f69a49858514de228eee09cfb205cfba1fd2a5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 17:56:11 2014 +0300
+
+    Updates to EPA1
+
+commit c4cfd2b33e6b4783063aac5af029fcebbd4f19e8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 17:45:04 2014 +0300
+
+    .
+
+commit a6193c87a914dcdc55f41ad57246135983aadc4c
+Merge: ac9bed1 22154c9
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 17:26:43 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+    
+    Conflicts:
+    	tests/input/CEP2SPARQL/convertcfevents.sh
+    	tests/input/CEP2SPARQL/data/i5sensors10000events.ttl
+
+commit ac9bed172fdf08d1c9b5e8ee1c06510906c7cf7c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 17:25:08 2014 +0300
+
+    Updates.
+
+commit 22154c92dbe792a3fd9cdceab0baaf46c97130cb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 17:24:21 2014 +0300
+
+    Added ccfe.rq/sh to CEP
+
+commit 7db4283a20d9c62ab9c406d2b1fdc711a08e3bf6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 16:21:08 2014 +0300
+
+    .
+
+commit ae7004a4d7c1f4112d74504c90b115ced8da1514
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 16:08:46 2014 +0300
+
+    Removed unnecessary debug output
+
+commit 906f05189c12390a3b7fc9a37bfb7febf26ab6f4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 16:05:14 2014 +0300
+
+    Fixed again blank node name generation
+
+commit 772958b1bf249f913b407920aa073946147acf20
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 15:57:46 2014 +0300
+
+    Fixed closing time-output-stream
+
+commit 6d4703e7fb7887efd30aefbc241a782badfb9da8
+Merge: 0fdf846 bd27e6a
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 15:47:24 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 0fdf846b6f55a36003ce1909cebdbfc55a5a88b5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 15:47:18 2014 +0300
+
+    EPAtest to stdout.
+
+commit bd27e6a99e75a28fcf3c17189ee803944a96bc28
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 15:44:41 2014 +0300
+
+    Fixed blank node names
+
+commit 83ad8304aff87d3396cd8112c25388e0b889c9e4
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 15:41:47 2014 +0300
+
+    CEP2SPARQL / EPA fixes
+
+commit 6b95b0eaa60d246db5d85037f0252904f6ac9966
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 15:18:17 2014 +0300
+
+    Fixed (hopefully) duplicate output in CONSTRUCT
+
+commit fe6114f400e9e916c9e457b577d7ea061d699e6d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jul 4 15:14:45 2014 +0300
+
+    Memory size reporting with --report=memory100 (for example) produces memory size info in every 100 rounds of execution. It show the biggest gainers too
+
+commit a37f1a7615a582437ca23fbf4be01e5fff6b3fdc
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jul 4 08:34:05 2014 +0300
+
+    Added more example cases to CEP2SPARQL.
+
+commit 6d99e86f1e9cabe415229f35cc2b667e802d4456
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 23:24:38 2014 +0300
+
+    Ptest not working yet
+
+commit c7a93e1eaf6dfc6632a18bd46fffa6df60d40826
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 21:51:58 2014 +0300
+
+    .
+
+commit 3369f291188e411f862316acf661ab9a8ccd8f4a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 21:51:16 2014 +0300
+
+    .
+
+commit 0a87b41623cf9ca79a0fa5f71bfff9993b55867e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 20:43:50 2014 +0300
+
+    .
+
+commit d30ae88cbf8347d5682b1d8c4d83116523663fc7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 17:50:23 2014 +0300
+
+    .
+
+commit ac788acdd1e4850ba83f33c10489c04ff07e7cc7
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jul 3 15:49:31 2014 +0300
+
+    Added EPA8 example files
+
+commit 4d7ccc7dc49a4b5e3d1abc7d44f6c5317fecb701
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 13:50:22 2014 +0300
+
+    .
+
+commit 96f7537ef49014fa175eb27dc7903f88e7089507
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 13:49:40 2014 +0300
+
+    Some fixes for output processors
+
+commit c225586d0fb319c01c5c99bd058dfc22571cd62d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 13:47:09 2014 +0300
+
+    Some fixes for output processors
+
+commit 7f733df263b2e02cb3745d90282eb8e308af531c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 13:46:36 2014 +0300
+
+    Some fixes for output processors
+
+commit bcab2c4bb3f5aab5ba7d9afc5951548a2534409c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 12:45:27 2014 +0300
+
+    Added error messages for construct output types not implemented yet
+
+commit 30151fbfdea115079d493aed3b9483294195abdc
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 12:40:43 2014 +0300
+
+    Fixed double literal printing
+
+commit 4748193d1471e1151ebc7e9387621cd6bc6eeb7d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jul 3 11:39:07 2014 +0300
+
+    Fixed bug in remove-token for construct nodes: Removed unnecessary code.
+
+commit 66e7b52ae4a41ecfd4bf71d989598c54cbfd4d4b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jul 3 09:12:14 2014 +0300
+
+    Rectified versions of EPA8-Transform.rq and CEP2SPARQL_Queries_testing.rq
+
+commit b70aad37ed03a0f8e5991e558418593e7cd1f717
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jul 3 08:59:48 2014 +0300
+
+    Added EPA8-Transform as an example of problems with CONSTRUCT.
+
+commit d29b8a20fc780b0bd1200a031d70fa07f337143c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 23:46:45 2014 +0300
+
+    .
+
+commit fd3abfdc64e9c95635fb8b29ac047ce498ec6ec4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 18:26:14 2014 +0300
+
+    Started writing CONSTRUCT batch mode output
+
+commit 8d636a6cab7f3e79bc8d3f2bb79bb28c2379912b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 15:48:14 2014 +0300
+
+    Fixed reporting bug. Changed construct output
+
+commit ea05906f3281d926291073b45c30b992a3e60c48
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 14:54:52 2014 +0300
+
+    Fixed some reporting bugs
+
+commit b120c34ad32d214e7dc6e0645d7988e97bb3b34c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 2 13:54:36 2014 +0300
+
+    Minor renaming fix in issue20.sh.
+
+commit 8409816edc7ee91524f9c851666d7daf4604892b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 2 13:48:43 2014 +0300
+
+    Added issue20 sample files.
+
+commit 8e07f731e6a028626043f58e99e545537fd4b204
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 2 11:58:20 2014 +0300
+
+    Fixed query names in CEP2SPARQL_Queries_testing.rq
+
+commit f0e6e9283aee7016e9dc57b1ac6b8973ed69b3d0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 11:46:02 2014 +0300
+
+    Cleaned reporting code
+
+commit 7f69c0354867bf8a7de8c6125e2cb4c3565d39fd
+Merge: f878d5a b644c34
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 11:27:10 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit f878d5a8d62ddcaed89aee86a6852e515bcad303
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 11:27:01 2014 +0300
+
+    Changed report output to show the queue contents
+
+commit b644c3400044f597b1301dd8a1c71f2ffeeded32
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jul 2 09:23:12 2014 +0300
+
+    CEP2SPARQL / EPA8 partially working - debugging.
+
+commit beea7fd2e89db2dfca3c0a3f1f9626226501c85e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jul 2 02:10:25 2014 +0300
+
+    Finally find the cause of the 'deleting unreachable code' note in main.lisp
+
+commit b4b8d5e54bcb315ebdfc0921e6c7fdc7c524672b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 22:00:22 2014 +0300
+
+    Added @name annotation handling in comments
+
+commit ae8d030abd76a6874e2eadf8a82154d4b5d39bcd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 20:10:42 2014 +0300
+
+    .
+
+commit 1ffbc62aed82f5ee06e7f64823d55b4e91038fea
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 15:59:22 2014 +0300
+
+    Cleaned
+
+commit 9974126f3fdc5dc916616a85e6ee664a32199ca9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 15:56:42 2014 +0300
+
+    Removed old main.lisp and renamed main2.lisp to main.lisp
+
+commit 26e3367ba720e2be17c50cd586f8ada4a5a56701
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 15:56:19 2014 +0300
+
+    Removed old main.lisp and renamed main2.lisp to main.lisp
+
+commit 5eb87769fad5ea3405547dc8f698a9e81c053589
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jul 1 15:53:30 2014 +0300
+
+    .
+
+commit c12fbdc32fe18d57eec29d51596e5a9b01b12ad5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Jul 1 15:22:44 2014 +0300
+
+    Next steps on CEP2SPARQL - working up to EPA7, testing on EPA8 continues.
+
+commit 7130d6c5339d53296fbb5fa109496c07cb30f372
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Jul 1 09:14:00 2014 +0300
+
+    CEP2SPARQL working until EPA7.
+
+commit 14bb5b739f7cdbeae45dde6988bd8d1764b3096c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 30 21:00:32 2014 +0300
+
+    .
+
+commit 7d3f6d9b65e31f47a331acb9cb16ca52ee937c43
+Merge: 34b166c b1e5161
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 30 18:00:15 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 34b166c5370e22f8dc1099428ab13c030e943415
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 30 18:00:07 2014 +0300
+
+    .
+
+commit b1e51612f9b6495e2b7f8d26e4406fb5b04f41e5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jun 30 17:50:30 2014 +0300
+
+    Updates to CEP2SPARQL queries.
+
+commit d5d88be2efe42ecf685b26407389d79744fd905d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 30 02:28:46 2014 +0300
+
+    Made configure a bit more quiet
+
+commit 11c34853324685c4155e5ec790f92f41a12afce6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 30 02:24:14 2014 +0300
+
+    Started writing new build script
+
+commit 07c3aaa0f977ce341b6a468bd872539a5b13d495
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 28 18:35:21 2014 +0300
+
+    .
+
+commit 419a439fbc2d827d88757dc51eb8b2a6ac04324f
+Merge: 43af9e0 4aa9379
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 27 17:24:53 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 43af9e0cfb61ed6b3554123f153ec5013b00bed0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 27 17:24:44 2014 +0300
+
+    .
+
+commit 4aa93790dbeeda1584a85f3df85b7728a628eba1
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Jun 27 16:47:49 2014 +0300
+
+    Added some cep2sparql test cases.
+
+commit 8f3281e79b156f6ee7253bb5a79a296a1a3d1a24
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 27 15:25:19 2014 +0300
+
+    .
+
+commit 6a72a89411e7d1d698d4404877f59c342ae6eeb2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 27 14:15:20 2014 +0300
+
+    Added new values for --rdf-operations and a possible solution for issue18, issue18-uuid.rq
+
+commit 053317bce9011b78ae97148900b333f0e5369367
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 27 00:26:35 2014 +0300
+
+    New option for prefix encoding URIs for debugging purposes
+
+commit 2036f1b47f438538c391d4af9db48ba5bdb560d8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 26 20:35:45 2014 +0300
+
+    Added issu17.correct.
+
+commit 5a05f7af996c7bec46e23261e6c5fa80302bd5e5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 26 20:29:32 2014 +0300
+
+    Added some testing code (instans-show-rete-status). Fixed test issue17.rq to be correct. Close #17
+
+commit af5cc8c22a73638ea1dbf7b1ceac002c43c9220a
+Merge: d9201f0 6c5fb8b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 26 15:41:56 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit d9201f0c0f5d2d43550f9f964125bfa039638ba3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 26 15:41:43 2014 +0300
+
+    Added new option --warn-on-errors=BOOL. Closes #14
+
+commit 6c5fb8b292202c84f4d2dec24f470193c894c675
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jun 25 18:31:18 2014 +0300
+
+    Added sample files for issue18.
+
+commit f0ea702953900c261c384031a09899d7a6d27e9b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jun 25 12:47:12 2014 +0300
+
+    Fixed the correct answers for issues 8 and 16. In 8 the ordering was different from the example. In 16 the blank node number had shifted from 0 to 1.
+
+commit 58632ccb55aaf404d4059f29e986e4b6641d2d7b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 25 01:58:43 2014 +0300
+
+    Close issue #8
+
+commit 6a3f43fc38015e8d26ab82c7c0ed54028554936b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 25 01:57:51 2014 +0300
+
+    Issue8 seems to be resolved. Note, that testing for correct output is not straightforward here; we should be able to test the isomorphism
+
+commit f6a35b8d74f0165d29bc1d9355af0b051a15b47a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 25 00:44:01 2014 +0300
+
+    Added some files
+
+commit 5e8eb1d03a9e159061688bbc44b0e2c7bc72e6c3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 25 00:35:43 2014 +0300
+
+    Cleaned tests Makefile and scripts
+
+commit d5f84f3d4f5436737159cacba7b8124b2a8921d6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 24 20:10:59 2014 +0300
+
+    Reimplemented output-rete-html-page. Now it uses no scripts anymore
+
+commit 9ae04fb8badb33c806c52972c5ed6de9190dca03
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Jun 24 16:33:56 2014 +0300
+
+    Added files for issue #17.
+
+commit 5ac20e0d3a5641f87f0dcf4ff128eb82c7770894
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 24 00:58:08 2014 +0300
+
+    In the middle of re-implementing sparql-query-results
+
+commit 8538d5d74f208b58a7cd20ea9ac7d59506663a4b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 23 20:33:54 2014 +0300
+
+    .
+
+commit c6e275b3e01d55857c3be8843c98be4311098b77
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 23 20:11:55 2014 +0300
+
+    Activated command line option --graph for turtle input
+
+commit 7cf8e6077fa48281d55102e91142004ba5d4bbdb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 23 19:54:59 2014 +0300
+
+    Added issue12.correct
+
+commit 65535bb25bb4376207c1c2f8e7c0ed9f729f4ee3
+Merge: 86e2342 af74683
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 23 18:05:31 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 86e234285754bb6d2f67493eacac600364385666
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 23 18:05:22 2014 +0300
+
+    Implemented DISTINCT; started implementing testsuite running.
+
+commit af74683f63436699b48048facc94c5d026578a54
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jun 23 17:07:21 2014 +0300
+
+    Fixed issue12.sh syntax.
+
+commit 7c06fab45f519e8fdf3b078746631e3290326edb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 22 23:24:53 2014 +0300
+
+    .
+
+commit 5918a0489d903367b2609237cad47dca1f796fb2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 22 22:45:46 2014 +0300
+
+    Fixed(?) the bug with yielding parser. The yielding actions should not throw. Instead they set a flag and the ll-parse function takes care of the rest. Passes the tests now
+
+commit 071e9e63a9815c2be13636580a6c738541410c29
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 22 18:53:17 2014 +0300
+
+    .
+
+commit dd16efca383dc5c20e1fd018752ddedaa44638eb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 18 01:47:45 2014 +0300
+
+    :
+
+commit ccd8f86f3c8cea20bcb04a9ae38180c4ddd54f7c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 18 00:17:30 2014 +0300
+
+    Combo options added
+
+commit 9045c745621f3fe24a79875fc78249d8c7788178
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 17 20:33:00 2014 +0300
+
+    Event processing works (add:execute:remove:execute). No memory leaks.
+
+commit 808ac8b3d545342d51f2c1c34a6a457c1df00800
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 16 23:39:20 2014 +0300
+
+    .
+
+commit ccec63e75201da95b545a26531afbb3ecfe12def
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 16 22:23:05 2014 +0300
+
+    .
+
+commit 0dab52c861f8af134682bcbb6dc80117eaf2feb8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 16 22:11:21 2014 +0300
+
+    .
+
+commit 6ec3e8eb50f16d4bcb6bc49aaa6373c77b15089c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 16 22:05:29 2014 +0300
+
+    New option system and new main in main2.lisp
+
+commit 858177657d6a6151f5b7fe31d55adf962a3cbe86
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 16 17:30:20 2014 +0300
+
+    .
+
+commit 23365ca6ea212c79a992e0d01750139cbbf63ac5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 15 19:46:34 2014 +0300
+
+    .
+
+commit e9ec0cd6bd4432c1754cfe19423185674be9a4da
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jun 12 17:02:21 2014 +0300
+
+    Added a query for issue 16.
+
+commit 75247a4637e8cdeba4729cd56ce3fa6d7095dfdb
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Jun 12 16:18:56 2014 +0300
+
+    Adding queries for issues 14 and 15.
+
+commit 75a6239155696ea716bc4f31fbb4ac221832a885
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue Jun 10 15:12:45 2014 +0300
+
+    Added the test files for issue 12.
+
+commit 9a0f1ad7150a974f23dac3ab6c0ff4c6aff3d5e1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 7 02:48:06 2014 +0300
+
+    Added --time option
+
+commit 3cd51b6b5cc73f3cfed7f454609c82cfd55bcb8a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 7 02:44:32 2014 +0300
+
+    Added --time option
+
+commit cb9c18294ae3fdff7446966ad42b429d363a0874
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 7 01:55:24 2014 +0300
+
+    CONSTRUCT now produces trig output
+
+commit 3fd03556da32ec13d95e893b04b865d243c2d63d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Jun 7 01:23:19 2014 +0300
+
+    CONSTRUCT now produces trig output
+
+commit 6b48ba3c19f130b79e51d6d93df4b48fba862fa8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 20:49:42 2014 +0300
+
+    .
+
+commit 2defcb4fc7e2aef1cae213a3914a7b58c34cb274
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 18:04:51 2014 +0300
+
+    .
+
+commit 12e098fe286dded7985cc20be594eb20e66e5de6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 18:00:48 2014 +0300
+
+    Implementing construct.
+
+commit 92400c31a6b6bba529022d23ffb1991fa8531b0c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 18:00:22 2014 +0300
+
+    Implementing construct.
+
+commit 94264c33c2e4ebc46de025a025b6a6d61116d0ad
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 01:49:26 2014 +0300
+
+    .
+
+commit e8733f949d0b3f6a84dddfbdf9b31da81c5ff1e7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 01:45:54 2014 +0300
+
+    Seems to pass all :nt, :nq, :turtle, and :trig tests.
+
+commit e0d54a20ed7829b4a6e7e708464da12191f98f7b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Jun 6 01:11:29 2014 +0300
+
+    Seems to pass all :nt, :nq, :turtle, and :trig tests.
+
+commit fca1720fb0363bdc6e2be88d8c24379b2287bc4f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 5 00:24:15 2014 +0300
+
+    RDF input tests almost done. Problem in SPARQL_style_base.ttl and case of 'a' '@prefix' and '@base'
+
+commit ccb625519d1246ecf48569947193a7b7c99f35fd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 5 00:23:46 2014 +0300
+
+    RDF input tests almost done. Problem in SPARQL_style_base.ttl and case of 'a' '@prefix' and '@base'
+
+commit 8425fe45ad6f2f534fb01170f057ee477007ce55
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Jun 5 00:21:11 2014 +0300
+
+    RDF input tests almost done. Problem in SPARQL_style_base.ttl and case of 'a' '@prefix' and '@base'
+
+commit d6c5c8c6f3c73487bf02db40f266aebdd06ded54
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 4 23:56:27 2014 +0300
+
+    Seems to pass all trig eval tests
+
+commit 29368fe650e9a2bd47a2774889bf4948a89e46c5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 4 20:32:06 2014 +0300
+
+    .
+
+commit bbbc50bd94aa4db1e8dc8595b7232607aa375eb2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 4 14:04:40 2014 +0300
+
+    .
+
+commit 8d585118d86dd719e90a1d71810a6347b240bdea
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Jun 4 02:26:31 2014 +0300
+
+    Fixed a bug in Unicode parsing. Still bugs in handling the character case of keywords 'a', '@prefix', and '@base'
+
+commit fb3487c54cfd8a1f184fddd8cba6806cd4d45632
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 3 23:31:04 2014 +0300
+
+    Fixed bugs in Lexer: DECIMAL now must have digits after '.'. Also, there was wrong character test in PN_LNAME
+
+commit 547a12667f95fcf62a51c4b7b04b27d69b8bb169
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 3 01:18:10 2014 +0300
+
+    .
+
+commit 7fcf9fb123eea9c7d91fa4ddf51ff1d7eb03a314
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 3 01:07:53 2014 +0300
+
+    More RDF tests
+
+commit 704a76a502b956901a23206590385c032b5b2b52
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 18:55:52 2014 +0300
+
+    .
+
+commit dbd81f439587e5a767ca6d089352de77dff401b7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 18:09:27 2014 +0300
+
+    Fixed bug that made rete to omit the graph
+
+commit 18fb8529c8482a9e7d2434cf5cf33592a04f6fcb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 17:24:42 2014 +0300
+
+    Parameter -t now takes .nt .nq .ttl .trig file
+
+commit fa133c4ef56d72c09d387252175525cf4604f668
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 15:01:10 2014 +0300
+
+    .
+
+commit a3cdc499fba1113239134f2a25f81e81da542c72
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 13:31:30 2014 +0300
+
+    N-statements test
+
+commit 2abf08da051b2ade6068051350e66054713f435f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 10:12:32 2014 +0300
+
+    .
+
+commit cfae810a3a9a392798cc773146c9685d0bdb78c1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 08:45:51 2014 +0300
+
+    Script trig-test-runner.rq parses the tests
+
+commit a0f50742074b6565ff4d908edda0d4dc6d2d547d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 01:22:52 2014 +0300
+
+    Should fix EOF checking in lexer, e.g., in eat-string-literal. Maybe fix get-char-if-looking-at to yield lexer error on EOF?
+
+commit 08ab30a83f1c0ff31a950ee81bbd3083327ae799
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 00:23:23 2014 +0300
+
+    Small changes
+
+commit 1c4ac0047dd6267ffe4cea25289446ed7dc1c382
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 00:22:50 2014 +0300
+
+    Small changes
+
+commit ddb2b45301a65b0db326d3818d87707ab91b54ba
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 2 00:15:01 2014 +0300
+
+    Made configure not to create SBCL image by default
+
+commit 0cd53cd70ad6fd52fa9ded3353d136d8d584642c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 22:37:11 2014 +0300
+
+    Added instans-end.ttl (instans-begin.ttl), which can be used to trigger action at the end (beginnig) of execution
+
+commit ddbd8598d438e46c5a5aa8a8242e591df76680fb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 22:05:35 2014 +0300
+
+    Collected info on RDF tests
+
+commit 3bedd0105417d8ecb1c182edc386e2cd805b5cb0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 21:34:28 2014 +0300
+
+    Added manifest-predicates.sh script
+
+commit 9af6f5d05854960876d6de1f77832a44806512d2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 20:08:46 2014 +0300
+
+    Testing triple parsers
+
+commit 2628ea6d50663192b7e5d93d904b66baf740f8be
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 19:32:02 2014 +0300
+
+    Implementing and testing nq and nt parsers
+
+commit 710682ef33b0e40ed92fcf7a8c5ef83e459c9e15
+Merge: a6877e6 ca5b273
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 19:06:40 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit a6877e608c5f3831ed9fb0333555963df2c6cee9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 19:06:23 2014 +0300
+
+    Implementing and testing nq and nt parsers
+
+commit ca5b2731ea95d76743beeedabc75d0e1b1cc0363
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Sun Jun 1 10:23:51 2014 +0300
+
+    Fixed issue8b.rq.
+
+commit 826bf7e9f9a17d9898728aa0100b6bf1bb9a769b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Sun Jun 1 10:16:42 2014 +0300
+
+    Issue 9 fixed with an OPTIONAL-clause.
+
+commit f2c005c220fd411f14631a787c051bf2fcb9510e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:26:26 2014 +0300
+
+    Added 5actors10000events.ntriples
+
+commit 39462b20e9030ae34992b9c51092c0c5c30d36f6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:16:02 2014 +0300
+
+    .
+
+commit 394a5b29d77bb19d91e4465f8977b11ce6c60266
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:14:24 2014 +0300
+
+    .
+
+commit 780f9d8728d0774013a07c138d1ffa7f97fb9eff
+Merge: c48f416 5505468
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:10:53 2014 +0300
+
+    Merge branch 'merging-triples-parser'
+    
+    Conflicts:
+    	scripts/run-sparql-syntax-tests-csv.sh
+    	tests/syntax-test-results/results
+
+commit 550546877875247efc6e744024178c24d625d2b5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:07:10 2014 +0300
+
+    Passes 957 of 960 syntax tests. Passes fnb tests. Passes issue tests except for issue8, where the problem seems to be in generating and naming blank nodes in BlankNodePropertyLists
+
+commit 9ea8e7f57941e34df44667ba79aedef772cb14a4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 1 02:03:06 2014 +0300
+
+    .
+
+commit d9a0ab5edd76ffebd9e3430dd3216fc1c2c6bae6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat May 31 20:17:58 2014 +0300
+
+    Before trying to fix blank node / var generation
+
+commit 700285ce7af783a7a33df4ca287b7c78bb976703
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 18:34:51 2014 +0300
+
+    Added files
+
+commit 5319cf564a5c1167d38ddb80e8bf10a1a93ed27e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 18:31:57 2014 +0300
+
+    Problems with issues 6, 8, 9, and 11
+
+commit 8e7651c03cbbeba1a0eeba83734522784ffff1e5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 15:59:36 2014 +0300
+
+    Projection still not quite right
+
+commit 9c1e4c8eb81ca13782b21a8be16f6239892794a6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 02:48:23 2014 +0300
+
+    Only three positive tests failed and 1 negative succeeded
+
+commit 408f408693bffea27a7ffc611c02e0c95853b75d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 01:11:19 2014 +0300
+
+    Now tries to run all 954(955) tests. Crashes on data-sparql11/delete-where/ tests. Does not produce all values to output index.html
+
+commit 840eda21f5d4795448516b5a2653865f2f20af9d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 30 01:04:42 2014 +0300
+
+    Now tries to run all 954 tests. Crashes on data-sparql11/delete-where/ tests. Does not produce all values to output index.html
+
+commit b1eb5eac359ee61d9ecd273ae3c207483f270120
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 29 17:06:54 2014 +0300
+
+    .
+
+commit 15bd3ec5ce0b5be8b5cf3edfb5cc51da69599d3a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 29 16:24:34 2014 +0300
+
+    .
+
+commit 082f4a05a70bdb33943773563139b9b12c3e8eef
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 20:52:48 2014 +0300
+
+    .
+
+commit d805af2fd1313ea94dddb3d51c4ca1154672e917
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 18:02:30 2014 +0300
+
+    .
+
+commit c48f4163a55377adcae865c8eb4b58b288e0dbaa
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 17:22:27 2014 +0300
+
+    .
+
+commit ae797b64bbe172405312b4a1c1ba14e72b1b8535
+Merge: a8108ab b38d464
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 17:07:21 2014 +0300
+
+    Merge branch 'triples-parser' into merging-triples-parser
+
+commit b38d464944535133d8d7c62265e8f28180d4d7e1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 17:06:45 2014 +0300
+
+    Before merge
+
+commit a8108ab7b280d97ed2b04f21081ae22690f6825d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 16:56:09 2014 +0300
+
+    Added issue11
+
+commit ae1d0968ab0630a6178af03487e33e4addfca61a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 28 16:48:44 2014 +0300
+
+    .
+
+commit e0b5dfe90c9d123ab69782e94b818473c0bcf3fc
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed May 28 01:03:25 2014 +0300
+
+    Added the query for issue10.
+
+commit ef5f51eda99f938a26afedbbb1d78bab68b5f6d2
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed May 28 00:47:55 2014 +0300
+
+    Added queries and data for issues 8 and 9.
+
+commit 45479e307df52f1126facba5431fcc543d05c115
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri May 23 14:21:40 2014 +0300
+
+    Documentation improvements.
+
+commit 98d72f4d92a98408831cb2daa80bad409e15dc61
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu May 22 16:18:19 2014 +0300
+
+    Added a PDF-version of the installation and use document.
+
+commit f6f9b858e87669a3a1e7fc47d6b1eaa526a8979c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu May 22 15:41:55 2014 +0300
+
+    Renamed aggr-window.* to aggr-builtin.* to clarify, which example contains what.
+
+commit c6b380bfcc4be6147c45bc1b365a6a1ebae197a2
+Merge: 4f3536a 5c01673
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu May 22 15:08:31 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+    
+    Merging my changes for aggr-lib.
+
+commit 4f3536a1df703efe4a72fa784c6d6ec1782c6312
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu May 22 15:08:21 2014 +0300
+
+    Aggr-lib upgraded to support overlapping windows, min and max.
+
+commit b5d03fbd90c678c42a9ac8e493d8270530e6eb34
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 21 17:34:48 2014 +0300
+
+    Trig working
+
+commit 7673e0d386c4cd924f928aeb4bd9577b3ddc5ddf
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 21 17:34:34 2014 +0300
+
+    Trig working
+
+commit dc5a7c4fb289f41227187b423c163e07c6a3cff9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 21 11:04:35 2014 +0300
+
+    .
+
+commit 5c016739ba38e6b29a95a39e65645869d55d433e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 21 10:29:58 2014 +0300
+
+    .
+
+commit 7fcbedba299e89bde0c999e7334d69292cb86118
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 21 00:53:21 2014 +0300
+
+    trig not completed yet
+
+commit f2ee3f0bfa96282e48bd043b290c258a3cc97158
+Merge: dc43748 0400004
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue May 20 20:31:00 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit dc437482890fe148c13b332437b396ace46fb101
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue May 20 20:30:45 2014 +0300
+
+    Started trig parser
+
+commit 04000048ad4cb4423dcd7dd601831121f64b4ee6
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue May 20 09:50:56 2014 +0300
+
+    Aggregate window calculation example added.
+
+commit 2afad0413b518e6e62122dd5d0dd94fb905c15c5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 19 15:04:41 2014 +0300
+
+    Issue8 solved
+
+commit c7b41760854761119f58d75e9518148a1d31de4d
+Merge: e168985 d9d4065
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 19 14:52:27 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit d9d406521cad9362de6e6563055bc65c544e4d10
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon May 19 14:40:52 2014 +0300
+
+    Adding potential issue 8.
+
+commit e1689858fa2d69652c59a5c9fced31233c46c677
+Merge: 5351d29 21c4fb3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 19 12:08:59 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 21c4fb363e7b93cb8c7722687ffc18929ade66c8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 18 22:50:30 2014 +0300
+
+    .
+
+commit 4418c6a26cffc62380cad023315e3795fd84041d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 18 22:50:02 2014 +0300
+
+    .
+
+commit 37f145790428f8ae5a4b454e06894fc7906f232d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 18 20:56:10 2014 +0300
+
+    .
+
+commit 41390c692af04a7da859f4cd3fee49718b1bdf26
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun May 18 19:42:47 2014 +0300
+
+    Rewrote syntax testing scripts
+
+commit 5351d29578a808aad9aa2a07b3816771a838b475
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 16 17:39:34 2014 +0300
+
+    .
+
+commit b720161e3cffa8fecaee02032ea54619be4be627
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 16 12:16:44 2014 +0300
+
+    .
+
+commit 445171b3b9839872694844f28103fdf3cbd28cc1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 16 12:15:37 2014 +0300
+
+    .
+
+commit 1fafd18f10e10cfef9c7b386f9366e2e74a41737
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 16 01:47:09 2014 +0300
+
+    Fixed a lots of small problems in syntax tests
+
+commit 505db423f04b3cb03418517f5a27dea1f4ff12b7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 15 22:00:11 2014 +0300
+
+    .
+
+commit 282530604218fdedfff8061cbc2a9d7dbc779d03
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 15 21:30:46 2014 +0300
+
+    .
+
+commit b1ace7bf47fa2500948800445d52a6239445f980
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 15 21:18:17 2014 +0300
+
+    .
+
+commit ad65801967282cc7786bf7305599388d28830c92
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 15 17:53:03 2014 +0300
+
+    Before changing compilation status messages
+
+commit 962ba732da38079b5175d55a9f6f323d4ed9c990
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 14 21:56:12 2014 +0300
+
+    798 tests OK (of 862). 60 positive failed, 4 negative succeeded. 10 ignored
+
+commit b36a4be2370607f6b26042424b86b7ff7904e995
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 14 20:23:14 2014 +0300
+
+    Small fixes
+
+commit 0c1be00e7b7adf6c74e633f5e3c272ae59fe985d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 12 15:54:25 2014 +0300
+
+    .
+
+commit 7f23eda6e082a49b21848163b996c52f8cb05fcf
+Merge: 82b66d8 02edabe
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 12 15:50:37 2014 +0300
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+
+commit 82b66d886ee85cd9ea4ed19c80e6cbc3207ba1c4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon May 12 15:50:26 2014 +0300
+
+    Aggregate window working
+
+commit 02edabe444a571693993b6bd2f5ea1e8adbe19f9
+Merge: 9dfc7cd 203adf5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri May 9 16:35:35 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+    
+    Concurrent editing on the same issues.
+
+commit 9dfc7cd14243fc1809f1bf04db8174962cf45138
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri May 9 16:35:29 2014 +0300
+
+    Updates to issue tests.
+
+commit 203adf5f8a0f0d7412cb6e487f313902a4769ae5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 9 16:33:34 2014 +0300
+
+    .
+
+commit bcfd015b403c430badc4fc594425556e95b0e231
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 9 16:11:03 2014 +0300
+
+    INSERT DATA done
+
+commit 1dbd5ccc783b8ca43d470e6f0660621decee0a5a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 9 14:28:15 2014 +0300
+
+    Merged
+
+commit 8b4cdc4bddc7c20d12d8d953994502f9d6ee6526
+Merge: 909fab4 15a6f16
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri May 9 14:25:43 2014 +0300
+
+    X
+
+commit 15a6f16f6d79619e32bd2c5bda3a69488798e428
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 8 22:12:20 2014 +0300
+
+    Changed INSERT/DELETE DATA to modify rule
+
+commit fa3cfb3aed5c7b309359e05e81e6f9eb550fc3eb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 8 21:48:22 2014 +0300
+
+    Unable to push remotely. Fixing this by syncing all files with my home computer, and then pushing
+
+commit 909fab48c487fa1f5bcd56a56a061193867a3949
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu May 8 21:33:09 2014 +0300
+
+    In the middle of INSERT DATA
+
+commit ee1eba690601763f9770a30499cf37294ddd94b9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 7 22:33:47 2014 +0300
+
+    Started implementing INSERT DATA
+
+commit ad55c0d30d310e8db12daab5a01b11d599b5fa00
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 7 21:38:16 2014 +0300
+
+    Made initialize-execution execute all rule instances that are inserted into the queue during initialization
+
+commit 0b24888ce1bfb1ea32244c5b84c05d6d36720630
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 7 16:45:30 2014 +0300
+
+    Fixed issue3. Turtle lexer could not handle [], since it did not have a buffered tokeniazation.
+
+commit 94b8c85a58b0d4386cc257b050c3a06371bd7e18
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 7 15:38:27 2014 +0300
+
+    Fixed hopefully insert/delete template compilation (issue6)
+
+commit 05521d03c093dcdec64584191307979103434bcd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed May 7 15:08:30 2014 +0300
+
+    Fixed hopefully insert/delete template compilation
+
+commit 620d476613ac4e2b64a2c60745e3a57abdb79f34
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue May 6 14:38:27 2014 +0300
+
+    Added query and data related to issue 7.
+
+commit 58cb5c8ef94dccba7ca2b450d5c2f66957534220
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Tue May 6 13:21:00 2014 +0300
+
+    Issue6 modified to produce Rete image.
+
+commit 267f002bd78979324d58e17cd0f730b84fae0cea
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon May 5 17:44:35 2014 +0300
+
+    Adding sample files for issue6.
+
+commit 7d5904610d394b54d75ed90d45e8f1e6409277a5
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon May 5 17:04:58 2014 +0300
+
+    Adding test files up to issue5 for github.
+
+commit 6f5f496f33e7676f3abc08a1d4b15a18f80d8124
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon May 5 15:13:23 2014 +0300
+
+    Sample queries and data added for issues 2 and 3.
+
+commit f543dace0d9e86f7423b196996d2ff288f1a4348
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon May 5 14:21:38 2014 +0300
+
+    Added an issues-folder to collect sample queries and data to reproduce issues listed in github.
+
+commit e3ac88654a7fb3eda0398891acdc022b25757ff3
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri May 2 10:07:07 2014 +0300
+
+    Tested blank node generation with CEP2SPARQL (cep2sparqltest.sh in this update). Not working yet.
+
+commit f79309f34617e03c2b17502f5d88d7bd8365302a
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Apr 30 18:01:58 2014 +0300
+
+    Added simple-tests
+
+commit 2a805fdcaeac8b057378adc32c92354a39760e8b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Apr 30 17:02:06 2014 +0300
+
+    Bug fixes for Blank uniqueness checking
+
+commit 96a503d618765846de9f001e1951c444269a9dd7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Apr 30 14:51:27 2014 +0300
+
+    Before changing blank testing
+
+commit 277b2c27d8a939643b7ce8006c23e3499abe77eb
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 29 18:13:54 2014 +0300
+
+    Bug fixes
+
+commit bae7addb2f7ff0547c3e7837bc73249244ff2f33
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Apr 28 16:54:31 2014 +0300
+
+    Test aggr-window.rq works
+
+commit 59553dc76466c8832e8e076d58cddc6b07ca7904
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Apr 25 17:34:29 2014 +0300
+
+    Simple aggregates OK
+
+commit d4c621e792dcedfc1ad104b77e5eea25bce9fbe0
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Apr 24 19:56:15 2014 +0300
+
+    Aggr
+
+commit 7f04b15738056446859a4ec1e1a96c11b67db310
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Apr 24 18:04:11 2014 +0300
+
+    Aggr continue
+
+commit e051576f779cb259e255d1f70ce41c03b49100cd
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Apr 23 16:50:00 2014 +0300
+
+    More aggr
+
+commit 2a4e5f88be273992a4a2eee1261d68b3f2943b2c
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 22 17:42:58 2014 +0300
+
+    Aggr
+
+commit ab6b519c41842cfaf39cd15f4ec14d7dc375422a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Apr 17 17:32:17 2014 +0300
+
+    Began aggregates
+
+commit 6f6ca05a5b5796176f0ffcf1991e5003e3ca1de0
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Apr 7 17:12:28 2014 +0300
+
+    Proceeding with SELECTS. Still puzzled
+
+commit 9a56a11b3858a6685907a186c822985c24d8e313
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Apr 2 16:51:40 2014 +0300
+
+    Coalesce still not working
+
+commit 85d300a981a50e78c61e660a86495b76d4a6bf63
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Apr 2 16:12:43 2014 +0300
+
+    CEP2SPARQL_Queries_working syntax fixed.
+
+commit 1f9c1a76292c7bd2b3adbddd16ad53d4a75a7522
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 1 14:59:20 2014 +0300
+
+    Fixed error message printing
+
+commit 2dd45d1302d0f50d70df4f3232bcf732592d384b
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 1 14:49:38 2014 +0300
+
+    Fixed missing parsing error printing
+
+commit 89f80191185cf46a4af9ce19622305c3f63a12e1
+Merge: 1e51cb8 5c47935
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 1 14:04:52 2014 +0300
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit 1e51cb88b1d0e914e9fbfe6c9ee17cfaa97d903a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Apr 1 14:03:04 2014 +0300
+
+    Fixed reporting
+
+commit 5c479356bd531d31f1360d00a090cfafee9f891b
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Mar 21 16:25:40 2014 +0200
+
+    Aimed for a running version of CEP2SPARQL. Not achieved yet.
+
+commit 1a025ef641d4cf6646ee58ddf8f4ca2bf6f5fc47
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Mar 20 13:35:53 2014 +0200
+
+    Fixed bug in expand-iri
+
+commit 6deb8c6d729096db8f1d75115b1dbb9c4440e84d
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Mar 19 17:26:01 2014 +0200
+
+    Select output as CSV working
+
+commit 8ae105bc36b345689f22108d17c16e407e238905
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Mar 19 17:18:06 2014 +0200
+
+    Select output as CSV working
+
+commit 3ab5ad6e54ea8c9e8725989c4216f21c4cc4b531
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Mar 17 14:39:50 2014 +0200
+
+    ./configure seems to work. Runs all tests in tests/
+
+commit 59fcd75420adf627c3160890bbf9d3b271e1b450
+Author: Esko Nuutila <enu@peak1.cs.hut.fi>
+Date:   Mon Mar 17 14:38:43 2014 +0200
+
+    ./configure seems to work. Runs all tests in tests/
+
+commit 8028112d441de9a41f0e512a86cb54f0041f073c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Wed Jan 15 16:03:31 2014 +0200
+
+    Aligned CEP2SPARQL_Queries_clean.rq with the comments added to the paper.
+
+commit 845fd8300134dd5516f97a5963583beb184f897e
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jan 13 17:28:23 2014 +0200
+
+    Moved Close Friends test stuff to CloseFriends directory.
+
+commit 00c51a4c1d38c2c0bb1915bb617dfd2aef9f1697
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Mon Jan 13 17:20:02 2014 +0200
+
+    Added CEP2SPARQL to tests/input
+
+commit 11e88f7752b9351ef7e701ff5d3ca3f660a670a5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 27 23:30:37 2013 +0200
+
+    Completed 0.0.2.4. The ll-parser now can be suspended (ll-parser-yields) and resumed
+
+commit 91318842c0a1eb31b408772d079d12d036cc5228
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 27 19:23:06 2013 +0200
+
+    Fixed a bug in run-sparql-syntax-tests.sh that caused the creation of file tests/-inf
+
+commit 1647d4c51f9648974090b53ad56679f73bc7fb80
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 26 22:03:10 2013 +0200
+
+    .
+
+commit 59dd27b8d9b21a971fd0914f7f062f8f872828fe
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 24 18:03:46 2013 +0200
+
+    .
+
+commit 15a9ce56d21808b938e62cf11e0dbb904ed5b027
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 24 18:01:43 2013 +0200
+
+    Fixed function calls through IRI. Not a syntax error anymore; uses instans:dynamic_call and tries to find the appropriate function on execution time.
+
+commit 3970808dcb9d4c3a005532f6f76ac94289ccbfe3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 24 17:50:49 2013 +0200
+
+    Fixed function calls through IRI. Not a syntax error anymore; uses instans:dynamic_call and tries to find the appropriate function on execution time.
+
+commit 60d357bd7c810aa721432de1b15ae7176f4f81b2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 24 02:13:04 2013 +0200
+
+    Changed syntax-tests reporting to ignore malformed sparql11 tests
+
+commit d0f65ff04abf3f0d5a6e61ee9cd125cd650888b7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 23 22:11:48 2013 +0200
+
+    .
+
+commit 7858aaa4beb768eddb03ac75b50406abc3678939
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 23 22:01:18 2013 +0200
+
+    Changed make-turtle/sparql-parser to use a simpler macro 'generate-ll1-parser', which returns a parser object. Runs tests in tests/Makefile.
+
+commit 14d74a2f30b2623dc0010d0025b32dca61dfd807
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 15:32:44 2013 +0200
+
+    Refactored ll-parser classes (parser->grammar, parsing->ll-parser; grammar now the superclass of ll-parser. Passes fnb and syntax tests
+
+commit 4f7aa5dc05dac924a40fd8f1df01cdced314a50d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 13:12:56 2013 +0200
+
+    Before cl-ll1 class name changes
+
+commit 3c09f21c273f5bef2b963f500a6ae97b07f4e419
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 04:06:16 2013 +0200
+
+    INSTANS version 0.0.2. Does some testing
+
+commit 8201268498e434ed42b73cf93d1352b054bd81da
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 03:46:04 2013 +0200
+
+    Version 0.0.2 in dev2 ready to be merged to master
+
+commit e6a93b74a39ecd2b055cf4b66cefbfd6320ff528
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 03:42:03 2013 +0200
+
+    Before new version 0.0.2
+
+commit 296fee042fe30ecf700b70fd4c62ed3302e86461
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 22 03:01:22 2013 +0200
+
+    .
+
+commit 8cc9148317ec2559a70458e3712cfbe290e99910
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 15 16:44:32 2013 +0200
+
+    .
+
+commit 8e0285f0e91a253f0a210ddd6e58c42302e9c872
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 15 16:13:20 2013 +0200
+
+    .
+
+commit d63723ebf01622855a37addfbdd6f2b5be5012fd
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 15 16:13:02 2013 +0200
+
+    Now seems to run CF-Queries-default.rq correctly
+
+commit d29138a44beadf15da4eae9620759df9d4249ce0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 15 01:09:31 2013 +0200
+
+    .
+
+commit 37c32e7b9172dc11fa4d37dc56d74baa7c26bfa0
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 15 01:09:13 2013 +0200
+
+    In the middle of fixing Friends near by. The problems were mostly in broken turtle parser.
+
+commit 9a2c565cfa204bb540e84fd6bf7c8ad52648bf86
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Dec 14 00:52:55 2013 +0200
+
+    Detected a problem in expand-iri
+
+commit 2d8489736a86c4a90d1f902ca3ec21ee32d437fc
+Merge: f0cecdf dfe11c6
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Dec 13 23:28:31 2013 +0200
+
+    ???Merge branch 'master' of https://github.com/aaltodsg/instans
+
+commit f0cecdf20e7804fdd4822e06871c5f5c6a8e1488
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Dec 13 23:27:48 2013 +0200
+
+    .
+
+commit 72096e9464a46045d20a2d25228a6aa88383141a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Dec 13 23:12:48 2013 +0200
+
+    In between ...
+
+commit dfe11c6d39203926e01661d41269da9c03e64e5a
+Merge: 5848f64 0afc7e4
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Dec 13 11:24:40 2013 +0200
+
+    Merge branch 'master' of https://github.com/aaltodsg/instans
+    Did some fixes to close friends, now pulling Esko's latest changes.
+
+commit 5848f6459d3186196789b57223a1408a48cd118c
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Fri Dec 13 11:22:33 2013 +0200
+
+    Some fixes to old CF example, but still no output.
+
+commit 0afc7e488e3162d339fa5207619ec2e7be322675
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 13 01:57:07 2013 +0200
+
+    Added preprocessing of hex escapes
+
+commit 454c1b1d94994f5315bb286364bc30807dd03038
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 12 20:03:51 2013 +0200
+
+    .
+
+commit c0fb289bee598185b0179b7d88bfc80a87d20166
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 12 20:02:07 2013 +0200
+
+    Fixed lexer problem with <0.01
+
+commit f964b2f8fda3bf227a3dab5709e99a85f58adf90
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 12 19:36:41 2013 +0200
+
+    Fixed lexer problem with <0.01
+
+commit 9968a467499c98aa3b751fe163600ac8ba414ab0
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 12 19:20:23 2013 +0200
+
+    Fixed lexer problem with <0.01
+
+commit e87853ea04f8dc47f73e4da14a400b354ab330a6
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 12 16:16:39 2013 +0200
+
+    Fixed parsing error with <
+
+commit 26f91985daf51fe7277fbc14b5141b3e1b5ebf80
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 12 13:57:56 2013 +0200
+
+    One-line script for running close friends added.
+
+commit f2d7d69423d8d5583d5990db6b3135139d614748
+Author: Mikko Rinne <mikko.rinne@aalto.fi>
+Date:   Thu Dec 12 13:57:19 2013 +0200
+
+    Close Friends example added to tests
+
+commit 39bb6af9d07d4030720b1286b5a3d4bba1889433
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 11 01:31:26 2013 +0200
+
+    .
+
+commit 80ffaf1364a356ffabf931bc8b68b4265f97a378
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 23:23:14 2013 +0200
+
+    First command line instans execution done!
+
+commit a16bac538889d9478b0f9d000b872a5cbbdb298c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 23:14:42 2013 +0200
+
+    .
+
+commit 4f507c9f07abb908f902ae42f1d371d2fd95c904
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 23:14:15 2013 +0200
+
+    .
+
+commit 06b03902d1620a7d94fddc0af411f4edf4cab450
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 22:41:42 2013 +0200
+
+    .
+
+commit 05cbfc01446dfcfa7224e6072353a8022ec2ff61
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 21:35:45 2013 +0200
+
+    .
+
+commit 6c2a602b67eec162bb42a3c3175c81a4019eabc7
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 10 17:33:33 2013 +0200
+
+    .
+
+commit 03f2e3f43a85744be25cc72884cfa03719248942
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 10 17:25:10 2013 +0200
+
+    Option parsing in main completed
+
+commit ea3c06620e1451f9c4ca23489414e1591a5a95f8
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 02:11:33 2013 +0200
+
+    Continued main.lisp. Still missing some options, like execution (and removal) policy
+
+commit 54e237a286037b848b147785660ee6db3a74bc20
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 10 00:15:12 2013 +0200
+
+    .
+
+commit 5d11b13b8acc53bdf79328d6d1fc3c738182820c
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Dec 9 19:51:01 2013 +0200
+
+    Added option --clean to ./configure. Added tests/Makefile. Some problem in running syntax tests: the number of tests has decreased?
+
+commit 72ee713de115f8f90becd22a9645de5bc43a064b
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Dec 9 17:30:53 2013 +0200
+
+    .
+
+commit c71a69878a2adf83d9d28521f1ffb11d53c8ffe4
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Dec 9 17:30:27 2013 +0200
+
+    .
+
+commit 1bf6fbce8bcc79e07a52585297871b46d8a46380
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Dec 9 17:28:31 2013 +0200
+
+    .
+
+commit 32fdca29bf2d5a5d17016d2898c481d6a9679050
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 23:19:46 2013 +0200
+
+    .
+
+commit 21522a4a80a1a34be45f8bca4a3adcde253ab137
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 20:18:39 2013 +0200
+
+    .
+
+commit a24fed241062c36b3887b5191c084e0dfdb38388
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 20:10:25 2013 +0200
+
+    .
+
+commit 603ddd35f89cd5b8592bc2fd35767c6919830a81
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 14:57:43 2013 +0200
+
+    .
+
+commit a8307b257e1285e23bc4b49a55a0f024e1c3b710
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 14:51:24 2013 +0200
+
+    .
+
+commit 45aa68bd7aae84c67f57505b9f0a8086c345f42c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 14:50:29 2013 +0200
+
+    Added scripts sbcl-instans and instans to instans/bin. Script instans is not implemented yet
+
+commit f750623b09b0e56ba858ff0ade363b3a46c209af
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 8 14:01:47 2013 +0200
+
+    Created instans/configure that initializes the system. This should be run after cloning the repository
+
+commit 71fdafadad60cbd6a468495f54a8b9eb3af57783
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 6 02:24:24 2013 +0200
+
+    .
+
+commit 92d85adfd990b81ada62fe9e4dd149fcf20fc03d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 6 02:21:50 2013 +0200
+
+    .
+
+commit 6d35227ea0a2cdd83ac9ae95250cc42a9de2e65a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Dec 6 02:11:39 2013 +0200
+
+    .
+
+commit f6d32ec282621982b2554a5844fa97ceb248d6dc
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Dec 6 01:31:30 2013 +0200
+
+    Now you should be able to initialize the system by 'make initialize' in instans/src
+
+commit a01e44e20b5da57911ca42b6ca36d5c036683053
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 5 22:53:10 2013 +0200
+
+    .
+
+commit 7c226e78d4086bacb187d79ac2493d71bdc7429d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 5 22:49:32 2013 +0200
+
+    New install script initialize-system/check-configuratio.sh
+
+commit 1235bee84a818c8207e902701808f02950061a7c
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Dec 5 17:32:31 2013 +0200
+
+    .
+
+commit 21ca7478a384f3a549ba52b306cdcdb03ffeeb56
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 5 00:23:18 2013 +0200
+
+    Now 137 failed positive tests. Most of them aggregates (not implemented yet), paths, updates, and missing ops
+
+commit d50c5c83a7db9d1921a2456301bf480610fe59df
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Dec 5 00:01:44 2013 +0200
+
+    Now 151 failed positive tests. Most of them aggregates (not implemented yet), paths, updates, and missing ops
+
+commit bcc04bb8ab61f94fe06650e2308dbc15807ca878
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 4 23:11:36 2013 +0200
+
+    Added file invalid-sparql-tests. This file should contain all tests in the test set that are not syntactically correct anymore (because of changes to sparql)
+
+commit 7abe77bf07ffae31112ba2ff94c8468e5c10b849
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 4 22:28:02 2013 +0200
+
+    Fixed SELECT AS expression variable test. Subselect :project-vars was not used
+
+commit e5fe367f6b9999caf755d433d5aebb872774f7b6
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Dec 4 17:26:43 2013 +0200
+
+    Run-syntax-tests now accepts only one incorrect test
+
+commit 94c898e2817c177d4aafe822b8c1875db854f30e
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Dec 4 16:14:06 2013 +0200
+
+    run-sparql-syntax-tests now runs all tests and produces a table
+
+commit 568d0a2c4634c296bbc293b062a62089257f9710
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Dec 4 00:41:25 2013 +0200
+
+    Trying to push all test queries through syntax-test.rq. Still some problems
+
+commit 96d737b41d2170a1386a23e9dde18a7a6d857947
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 3 19:32:44 2013 +0200
+
+    .
+
+commit 674d03bea45d979196af6c755d811c500ec096a7
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 3 19:32:35 2013 +0200
+
+    .
+
+commit 34670011ff987866c1cc3be3acb6fe2ba7f6b23f
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 3 15:29:57 2013 +0200
+
+    Implemented HTML page output to run-sparql-syntax-tests
+
+commit 7bc39d65f80fc6ee52b98fe6b782ec6a071d17fa
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Dec 3 11:48:31 2013 +0200
+
+    Fixed an URI bug in data-r2 test runner
+
+commit 51ed8dcb10c8e5b9a5a978077a682f014e0c04a5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 3 01:36:49 2013 +0200
+
+    Now runs all syntax tests
+
+commit 9b6c2981dd295be1c7c5f69e352c26deac819ee4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 3 00:08:50 2013 +0200
+
+    .
+
+commit c2fdaf6ea49fab608f5e9413286aeb4ed62edfa5
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Dec 3 00:07:55 2013 +0200
+
+    Moved sparq-syntax-tests to run-sparql-syntax-tests
+
+commit b1da84a98bc9de93781abf6b4adcb1920ae6fe0b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 2 23:33:09 2013 +0200
+
+    Script src/sparql-syntax-tests runs now all Sparql (version 1) syntax tests
+
+commit 4e731c7ee96fe84553b1054a2afd7dfaccec75e9
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 2 22:20:41 2013 +0200
+
+    Created syntax-tests
+
+commit 754bd5b1d8c3bdedf774d04566da35191b9e94eb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Dec 2 22:19:23 2013 +0200
+
+    Testing.lisp and run-tests are not used anymore. Moved to src/off
+
+commit 43acddea1a35822f840da5b04f7a89da9372d8dd
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Dec 2 17:35:28 2013 +0200
+
+    Running syntax tests
+
+commit 084ef1b3694cd3efaee06e78c71e75f0f516857c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Dec 1 20:48:45 2013 +0200
+
+    Still some syntax tests fail (actually static semantic tests)
+
+commit 32056aaf2610d4251069dba10f028470ed1b2509
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Nov 29 17:35:54 2013 +0200
+
+    Completed variable propagation change
+
+commit 71df969600d7abb83d3b5b6e2e7cabedbd9c80ad
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Fri Nov 29 01:52:28 2013 +0200
+
+    In the middle of fixing vars
+
+commit 045d227486947f2177880fc681387538897b4936
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Nov 28 19:35:43 2013 +0200
+
+    Refactored solution-modifiers-node and select-node to query-node
+
+commit 069830e2434316f76b7f3305b880544b73d9a76f
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Nov 28 18:08:26 2013 +0200
+
+    Vars in/out split into all/visible
+
+commit 1016229f0f147cc9ce8ac46a8a5fee374d9e87e1
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 27 22:10:14 2013 +0200
+
+    In the middle of chaning var propagation
+
+commit 227b16ef369d139c69605d3722f941c70cca9e98
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 27 17:17:48 2013 +0200
+
+    Checking syntax query tests. Found some errors in the tests
+
+commit 43d48c201c5b9a588d097e1e68815cf7be48e25c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 26 18:46:41 2013 +0200
+
+    Split competed
+
+commit 8aec70ccd233a485022c5c0a5bf793fb94def771
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 26 15:29:35 2013 +0200
+
+    Splitting execute_system to smaller pieces for better diagnostics in TESTSUITE.RQ
+
+commit e3685566bfb5d0f101a412ecfed88fffe593a238
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 26 01:20:57 2013 +0200
+
+    Added new scope handling in translate-group-graph-pattern. Still missing the same for (sub)select
+
+commit a4f963ac7b8abed7dfee604a81bfe21fb1dc4a04
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 26 01:19:24 2013 +0200
+
+    Added new scope handling in translate-group-graph-pattern. Still missing the same for (sub)select
+
+commit 01e23b8fdad91e7a31771423e17fd7fd7143f6e0
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 25 17:25:48 2013 +0200
+
+    In the middle of changing scope computation
+
+commit 54dc59e5346f44df24e4702928a6e4dd03a5cfa7
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 24 21:59:49 2013 +0200
+
+    .
+
+commit 36b47b2131e591a0934e2c85ed13c19591e43190
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 23 21:07:30 2013 +0200
+
+    In the middle of chaning UNION and GGP translation
+
+commit 1364fbb0a550f965fab38f9927bd13adcbff2a0c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 23 21:07:10 2013 +0200
+
+    In the middle of chaning UNION and GGP translation
+
+commit 42abf97c2175610ffa17f054f983edb0ef23dd48
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 23 00:16:02 2013 +0200
+
+    Now runs bind tests correctly and syntax-query tests without crashing :-)
+
+commit ecbe93d2da2bd3c87902e495b9852128a10f7d8a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Nov 22 18:54:10 2013 +0200
+
+    Fixing vars-out, not ready yet
+
+commit f6aa8e3593ece311a75454dda0857979e640a0ae
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Nov 21 00:42:27 2013 +0200
+
+    Accepts some illegal queries in syntax-query
+
+commit 24bf7f34a37642ae2bd8f688681b6ed833044292
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 20 15:28:44 2013 +0200
+
+    Syntax-query tests: how should pname-to-iri produce errors in sparql-parser?
+
+commit 15edf89c99b74685eb24e76016578706274f2581
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 19 23:36:40 2013 +0200
+
+    Fixed contains, but now there is a problem in comparing results. Lang tag seems to be missing.
+
+commit 47289d4b4b7ef5ba7640a29f37772d4381ad252f
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 19 23:32:53 2013 +0200
+
+    Debugging functions. Now at contains01: lang should not prevent matching
+
+commit ed2aeea3de356992b54dec546e059e8a7de3f2eb
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 19 23:19:52 2013 +0200
+
+    Debugging functions. Now at contains01: lang should not prevent matching
+
+commit bdaea8feef7cee863e3d4f6d98e7392c57b4fc99
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 19 19:12:31 2013 +0200
+
+    Does not produce ANY results at the moment! Editing broke something
+
+commit 5ee1063f539c47a56762dd7e42474d3b582256d4
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 19 14:53:54 2013 +0200
+
+    .
+
+commit 8cb9f4d450a9f4ca5bd541e452b27816128a6a91
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 19 01:15:46 2013 +0200
+
+    docompile.lisp
+
+commit 2102e0a5eba7f9c9967edeade4e232f6f4af014d
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Nov 14 20:15:14 2013 +0200
+
+    Continuing test suite running. Now crashes on file:///Users/enu/Sparql/sparql11-test-suite/exists/exists02.rq
+
+commit e269f76c15cf5d17ddf1101c49524cce337bf221
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 13 22:22:47 2013 +0200
+
+    .
+
+commit 07569a883ccba44ba74fa775b67e3a1d62cb6506
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 13 21:22:40 2013 +0200
+
+    Added missing file
+
+commit 53908d24e2b1bc85c4d3726429e0af242075680a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 13 17:09:35 2013 +0200
+
+    .
+
+commit 00961458a70702a344b95db3abb0e66d024674ba
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 13 16:49:08 2013 +0200
+
+    Fixing js result generation/parsing
+
+commit 63197dfb32f45fd8bb24d980251aa067961b94de
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 12 19:10:58 2013 +0200
+
+    Proceeding with metasuite.rq
+
+commit dcb0ef3d48cdaa1ea5604a742f0fc5aaad125edf
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 12 15:32:04 2013 +0200
+
+    define-type -> deftype done.
+
+commit d59fa491723004c75d0fb7f29d07bac42e729c5e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 12 11:50:41 2013 +0200
+
+    Changing the computation of hashkeys
+
+commit bd84921cfa4a05e8be0e9e7cefef64070c4993f6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 12 00:58:59 2013 +0200
+
+    Modify/insert works, but modify/delete does not
+
+commit 8b94343875c68de476d2e8900af04ddad621be20
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Nov 11 22:59:38 2013 +0200
+
+    Modify/insert works, but modify/delete does not
+
+commit a8245771142023ece1e1a9320b659fa2612a45f0
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 11 17:20:21 2013 +0200
+
+    Kesken
+
+commit cdba04e62236af6c59283706bf82ac652699d229
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 10 23:07:13 2013 +0200
+
+    Modify template compilation not completed yet
+
+commit 1f6416f2022b7dbac27dbf706aa23a8fb6238874
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 10 16:04:31 2013 +0200
+
+    Modify node funcs not OK
+
+commit 62cac193f1a73eb25c739350ff387faaf96223e2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 10 15:06:23 2013 +0200
+
+    Modify node funcs not OK
+
+commit 72977148d5f2dea0dc2b9dc81fc1c7aca79de8a6
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 9 20:26:21 2013 +0200
+
+    Now runs all bind tests correctly. Note, that there is an error in the expected results of bind07
+
+commit 0e5c6fa7ae151172a8979e7d8cef3a7bb2475641
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sat Nov 9 16:44:44 2013 +0200
+
+    Executes correctly bind tests 1,2,4-6,8,10 and incorrectly tests 3, 7, and 11
+
+commit 726c63f4505f0398a118f88d8ac2c3555f251203
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Fri Nov 8 17:45:00 2013 +0200
+
+    Seems to have problems with embedded RETEs. Probably there is a bad use of defvar, which should all be replaced by defining an environment for each RETE
+
+commit e44b1b0bfed9be96abe50ac9f4a75e2fce26b843
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Nov 7 20:19:17 2013 +0200
+
+    Strange bug. rdf-iri-path is a list, not a string sometimes
+
+commit 93564936e04d97aac969adb6c87664efa828ff97
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Nov 7 19:27:19 2013 +0200
+
+    Runs testsuite.rq, but fails on the same bind tests as yesterday. I did not fix them yet
+
+commit 7d5ab1f0cf10dbfdb6ec346a4776e7242326682d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 6 23:34:06 2013 +0200
+
+    Processes correctly bind(01|02|05|06|08).rq (although the order of results is different in 01, 02, 06). Missing results on 03. Crashes on 04 (cannot handle select *). Cannot handle EXTEND ZERO-PATTERN on 07. Cannot handle Boolean result in 10? Cannot handle EXTEND with value 4 in 11
+
+commit 69eefb1c7609b2d17a2c2ed7b6f80151208671ec
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Wed Nov 6 23:23:48 2013 +0200
+
+    Processes correctly bind01 and bind02 (although the order of results is different). Fails bind03
+
+commit 8e8dcd3615ab614620fec955413cc03361606ea4
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Wed Nov 6 16:57:26 2013 +0200
+
+    .
+
+commit 3cad6a359a9f5c6f04282ab5c574f7bfafb54dda
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Tue Nov 5 19:14:18 2013 +0200
+
+    Parses and generates correct? rete for bind01.rq
+
+commit 6ac5bfdb2895708e1943d187e6750ccda01ef539
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 5 03:05:11 2013 +0200
+
+    Processes testsuite.rq
+
+commit 7b3490223fdcc6abcb9cae777aa550c3f8417d1d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 5 02:03:05 2013 +0200
+
+    Fixed triple matcher. Still tokens, indices and stores
+
+commit c2d0734be16286f08c752705b7f60d1748695af3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Nov 5 00:22:15 2013 +0200
+
+    Should still fix the hashing of 1) terms in triple-pattern-matcher 2) tokens in indices and stores
+
+commit fa2c008cb15b0f5a5ec8416f4cd1fa2da484b85b
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 23:37:38 2013 +0200
+
+    .
+
+commit 98ec8e3ff325faf750a11012e5df46592e79daae
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 23:32:53 2013 +0200
+
+    .
+
+commit dc0c7f9d5aa39b1266ee59ca4233b586e755656d
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Nov 4 23:30:33 2013 +0200
+
+    .
+
+commit da9cbea4f43e3f2fd03b8afb4a6c8c725da3cb37
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 17:28:18 2013 +0200
+
+    Fixing turtle parser. Still some bugs
+
+commit 772ba6567eda3ba2d268352091c7385da0623e64
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 14:42:56 2013 +0200
+
+    Changed barf -> inform or warn
+
+commit 6941439c4c9ce0805345a39b06359121745a6b56
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 13:23:30 2013 +0200
+
+    Fixed missin in-package in iri.lisp
+
+commit 9f0a1a816db54a30745ee157c6a150f6e43249fc
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 13:12:08 2013 +0200
+
+    .
+
+commit ea64e2ffae700b102e8d5980122b9c6998b9027c
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 13:11:58 2013 +0200
+
+    .
+
+commit 06517d001654e2f4a98eba049e2eb608be52577a
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Mon Nov 4 13:11:25 2013 +0200
+
+    Added all lisp files. Still not tested
+
+commit 4cff534e5fa555c0f1b1aa33e2a2e5b68d79c241
+Author: Seppo Törmä <seppo.torma@aalto.fi>
+Date:   Mon Nov 4 12:31:17 2013 +0200
+
+    poisto
+
+commit 178d2ddc2c8237727625f2f3c265b5f8cdd576fc
+Merge: 9c97bd6 73d161c
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 3 13:58:24 2013 +0200
+
+    Merge branch 'master' of ssh://github.com/aaltodsg/instans
+    
+    Conflicts:
+    	README.md
+
+commit 9c97bd63ba2ff2ab51df35e199800852a3832f36
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Nov 3 13:23:36 2013 +0200
+
+    .
+
+commit 73d161cfcde300e9ea206e60203fd6fa92162829
+Author: Seppo Törmä <seppo.torma@aalto.fi>
+Date:   Fri Nov 1 14:41:48 2013 +0200
+
+    Added Instans description
+
+commit 9f98fe46928be4cfcdf52924e855d97564a65f2e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 31 15:13:00 2013 +0200
+
+    Changing README
+
+commit 705873c24feaeb7a6bea3627675f330484a39064
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Thu Oct 31 15:08:00 2013 +0200
+
+    Adding .gitignore
+
+commit 56a5d16267fa8d63e77b7bf63b534127faa9aea4
+Author: Esko Nuutila <esko.nuutila@aalto.fi>
+Date:   Thu Oct 31 06:02:00 2013 -0700
+
+    Initial commit
