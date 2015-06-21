@@ -5,7 +5,7 @@ INSTANS_BIN=/Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 ls -l /Users/enu/aalto-dsg/instans/bin/instans.bin:
 
--rwxr-xr-x  1 enu  staff  101482544 21 Kes 20:20 /Users/enu/aalto-dsg/instans/bin/instans.bin
+-rwxr-xr-x  1 enu  staff  101449776 21 Kes 21:25 /Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 /Users/enu/aalto-dsg/instans/bin/instans --version:
 
@@ -15,111 +15,40 @@ git branch:
 
   find-token-value-types
   for-optimizing-stream-processing
-* hashtable-fix
+  hashtable-fix
   lisp-triples
-  master
+* master
   parser-stacks
 =============================
 git status:
 
-On branch hashtable-fix
-Your branch is up-to-date with 'origin/hashtable-fix'.
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
-	modified:   src/rete/rete-classes.lisp
+	modified:   src/cl-ll1/generator.lisp
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	README.find-token-value-types
-	cmpcommit.sh
-	instans-token-types
-	lcl
-	o
-	src/1000-1.csv
-	src/10000-1.csv
-	src/100000-1.csv
-	src/100000-5.csv
-	src/e-10000-1.csv
-	src/e-100000-1.csv
-	src/e1.lisp
-	src/e2.lisp
-	src/el1.lisp
-	src/el2.lisp
-	src/haa
-	src/main/tom
-	src/rh.html
-	src/tests/tmp.lisp
-	tests/input/CloseFriends/5actors10000events.lisp
-	tests/input/allevents1.lisp
-	tests/input/allevents2.lisp
-	tests/input/passthrough.rq
-
-no changes added to commit (use "git add" and/or "git commit -a")
 =============================
 git log:
 
-commit 22be70429eed4b313d1af418d45504006cc47c58
+commit 8bb216be7651539b0ce224b76e98e4c60aa6bd8b
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 19:48:30 2015 +0300
+Date:   Sun Jun 21 19:43:07 2015 +0300
 
-    Merged src/rete/{interpreter,rete-classes}.lisp from master
+    Fixed configure. Main and interpreter updated for memory size tracking
 
-commit 9fa329c22f24a5eeaf9774ec2b47acae0d34a1d9
+commit baa59dd942eac08a596fcc03e4bea3ef99794707
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 19:47:21 2015 +0300
-
-    Merged src/main/main.lisp from master
-
-commit c0e288dbccf5efa78e2dd33ea437550f40c30668
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 19:46:33 2015 +0300
-
-    Merged configure from master
-
-commit 3afd9826964e06d173ca3c625f40c64d2632428f
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 11:18:01 2015 +0300
+Date:   Sun Jun 21 11:12:33 2015 +0300
 
     .
 
-commit a30bffd9324e6d1a8bcb87aa67c2c90c5969271d
+commit 89c53405f24b3e6b248b13e808907c2f10664cd8
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 11:16:13 2015 +0300
+Date:   Sun Jun 21 02:48:59 2015 +0300
 
     .
-
-commit e0ce56cf634f6972b5c703a7ed4050a4cc529bc7
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 11:11:06 2015 +0300
-
-    .
-
-commit 85f0d45803f86876efda6972b3b4bd8dd6680c5d
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 11:03:57 2015 +0300
-
-    .
-
-commit c33b1c0a2d4c3f9d0b9ae0e64bae531691a4a44b
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 01:25:39 2015 +0300
-
-    Fixed internal token handling for filter-memory and existence-start-node. Now they compare the correct part of token (see find-token-in-item). Conformance 586 success. At least part of Mikko's tests ok
-
-commit cce59301a056739fe0994bd7e717ba95286f28e5
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sat Jun 20 23:25:30 2015 +0300
-
-    Fixed store.lisp to use collision lists. 586 tests succeeded.
-
-commit 7a708e87cca84c4bf2c965c0cafc24dc66783d97
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sat Jun 20 23:25:16 2015 +0300
-
-    Fixed store.lisp to use collision lists. 586 tests succeeded.
 
 commit ab2f34cb0cad0b33a2b406959794cca7f2961a65
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
