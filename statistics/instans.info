@@ -5,7 +5,7 @@ INSTANS_BIN=/Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 ls -l /Users/enu/aalto-dsg/instans/bin/instans.bin:
 
--rwxr-xr-x  1 enu  staff  101449776 21 Kes 21:25 /Users/enu/aalto-dsg/instans/bin/instans.bin
+-rwxr-xr-x  1 enu  staff  101318704 23 Kes 00:51 /Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 /Users/enu/aalto-dsg/instans/bin/instans --version:
 
@@ -16,21 +16,83 @@ git branch:
   find-token-value-types
   for-optimizing-stream-processing
   hashtable-fix
+  kill-factories
   lisp-triples
-* master
+  master
   parser-stacks
+* sparql-list-datastructures
 =============================
 git status:
 
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+On branch sparql-list-datastructures
+Your branch is up-to-date with 'origin/sparql-list-datastructures'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   src/cl-ll1/generator.lisp
+	modified:   src/main/translate-sparql-algebra-to-rete.lisp
+	modified:   src/parser/lexer-classes.lisp
+	modified:   src/rete/lisp-compile.lisp
+	modified:   src/sparql/iri.lisp
+	modified:   src/sparql/sparql-classes.lisp
+	modified:   src/sparql/sparql-types.lisp
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	token-value-types
+
+no changes added to commit (use "git add" and/or "git commit -a")
 =============================
 git log:
+
+commit e7ac030bb3fdfda01fbd9a26cee892872ce4074b
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 23 00:43:45 2015 +0300
+
+    ...
+
+commit 80c78b1faabb997e88a59acfb03591d4875f00c4
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 23 00:41:02 2015 +0300
+
+    Started making rdf-iri a defstruct. 586
+
+commit e46bd4916523ff83d8fb7011e70eff2608531949
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 23 00:35:51 2015 +0300
+
+    Eliminated class hashkeyed
+
+commit a94950c5b6be03a803f869fff8f08ce55b70466e
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Tue Jun 23 00:25:46 2015 +0300
+
+    Got rid of class rdf-term. 586
+
+commit b97c3027a7bbd9e78a62e7e50f398367408af122
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 22 23:44:01 2015 +0300
+
+    Changed datetime to a struct. 586 tests OK
+
+commit 1996adef82f57300656fb6665be95e579133e8d3
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 22 22:04:21 2015 +0300
+
+    Took main and sparql-tests from master
+
+commit b18f47ced379b09d5d59f7180eaa06e3483675f2
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Mon Jun 22 20:14:11 2015 +0300
+
+    .
+
+commit fd3762d15a64b1fb12d36600140224851e3be550
+Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
+Date:   Sun Jun 21 21:27:50 2015 +0300
+
+    Merged generator.lisp with fixed multiple-value-prog1 from parser-stacks
 
 commit 8bb216be7651539b0ce224b76e98e4c60aa6bd8b
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>

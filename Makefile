@@ -28,7 +28,7 @@ $(INSTANS_TEST_RESULTS): $(INSTANS_BIN)
 	tools/run-tests.sh $(INSTANS) $(ROOT) $(LOG)
 
 compare-to-prev:
-	-tools/compare-results.sh
+	tools/compare-results.sh
 
 clean:
 	-rm $(INSTANS_TEST_RESULTS) $(STATISTICS)/*.csv

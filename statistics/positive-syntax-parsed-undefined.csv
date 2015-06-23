@@ -1,4 +1,4 @@
-syntax-test-p,negative-syntax-test-p,query-evaluation-test-p,type,suite,collection,name,failedp,implementedp,parsing-succeeded-p,translation-succeeded-p,initialization-succeeded-p,rule-type,different-semantics-p,running-succeeded-p,comparing-succeeded-p
-True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv01,True,False,,,,,False,,
-True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv02,True,False,,,,,False,,
-True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv03,True,False,,,,,False,,
+syntax-test-p,negative-syntax-test-p,query-evaluation-test-p,type,suite,collection,name,failedp,implementedp,parsing-succeeded-p,translation-succeeded-p,initialization-succeeded-p,rule-type,different-semantics-p,running-succeeded-p,comparing-succeeded-p,time
+True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv01,True,False,,,,,False,,,0
+True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv02,True,False,,,,,False,,,0
+True,False,True,CSVResultFormatTest,data-sparql11,csv-tsv-res,csv03,True,False,,,,,False,,,0

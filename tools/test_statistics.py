@@ -12,6 +12,8 @@ output_dir = sys.argv[2]
 
 # Output tables go to the same directory where input came from
 
+(root, ext) = os.path.splitext(input_file)
+allsanstimesfile = root+'-sans-times'+ext
 output_msgs = os.path.join(output_dir, "results.txt")
 suite_file = os.path.join(output_dir, "suite.csv")
 suite_collection_file = os.path.join(output_dir, "suite-collection.csv")
@@ -75,6 +77,8 @@ def check_counts(part1, part2, total, indent, dp1, dp2, dtot, difference_file=No
 # Read inputs
 
 all = CSVfromFile(input_file, message='Input {}')
+allsanstimes=all.projectNot('time')
+allsanstimes.write(allsanstimesfile, message='Write {}')
 suite = all.project('suite').dropDuplicates()
 suite_collection = all.project('suite','collection').dropDuplicates()
 types=all.project('type').sort('type',unique=True)
