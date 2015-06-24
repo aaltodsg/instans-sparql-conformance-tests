@@ -5,7 +5,7 @@ INSTANS_BIN=/Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 ls -l /Users/enu/aalto-dsg/instans/bin/instans.bin:
 
--rwxr-xr-x  1 enu  staff  101154864 24 Kes 16:00 /Users/enu/aalto-dsg/instans/bin/instans.bin
+-rwxr-xr-x  1 enu  staff  101154864 18 Kes 17:06 /Users/enu/aalto-dsg/instans/bin/instans.bin
 =============================
 /Users/enu/aalto-dsg/instans/bin/instans --version:
 
@@ -14,78 +14,35 @@ INSTANS version 0.3.0.0
 git branch:
 
   hashtable-fix
-  lisp-triples
-* master
+* lisp-triples
+  master
   parser-stacks
-  sparql-list-datastructures
 =============================
 git status:
 
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch lisp-triples
+Your branch is up-to-date with 'origin/lisp-triples'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README.lisp-triples
+	new file:   src/parser/lisp-parser.lisp
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/instans.asd
+	modified:   src/main/main.lisp
+
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	tests/input/cep2sparql-testing/
 	tests/pdfs/
 
-nothing added to commit but untracked files present (use "git add" to track)
 =============================
 git log:
-
-commit 732e5e542b243df734396144c8e2b9bbe6c65f8d
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Wed Jun 24 16:00:01 2015 +0300
-
-    Fixed unnecessary output
-
-commit aa4e184f2f5951a653338c05c82535714e066052
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Wed Jun 24 09:40:24 2015 +0300
-
-    .
-
-commit e838c23160df6977ae9f4ee621105849f4f30232
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Tue Jun 23 20:28:57 2015 +0300
-
-    .
-
-commit 3ed6ccc8676cfc55c3ddb517ba43c44979e2de5b
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Mon Jun 22 21:59:23 2015 +0300
-
-    Added time information to conformance tests
-
-commit fd3762d15a64b1fb12d36600140224851e3be550
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 21:27:50 2015 +0300
-
-    Merged generator.lisp with fixed multiple-value-prog1 from parser-stacks
-
-commit 8bb216be7651539b0ce224b76e98e4c60aa6bd8b
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 19:43:07 2015 +0300
-
-    Fixed configure. Main and interpreter updated for memory size tracking
-
-commit baa59dd942eac08a596fcc03e4bea3ef99794707
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 11:12:33 2015 +0300
-
-    .
-
-commit 89c53405f24b3e6b248b13e808907c2f10664cd8
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sun Jun 21 02:48:59 2015 +0300
-
-    .
-
-commit ab2f34cb0cad0b33a2b406959794cca7f2961a65
-Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
-Date:   Sat Jun 20 21:19:31 2015 +0300
-
-    Added (in comments) a version of canonize-string, which just makes a string.
 
 commit 4ccdf6907ee9d90d597e6a2fd687699ed2d70d9b
 Author: Esko Nuutila <Esko.Nuutila@aalto.fi>
