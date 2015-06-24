@@ -45,7 +45,7 @@ Query evalution test execution statistics:
 
 This text is saved in [20].
 
-References (relative to /Users/enu/aalto-dsg/instans-sparql-conformance-tests
+References
  [1] suites/results.csv
  [2] statistics/suite.csv
  [3] statistics/suite-collection.csv
