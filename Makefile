@@ -1,10 +1,10 @@
-ROOT=/Users/enu/aalto-dsg/instans-sparql-conformance-tests
-SUITES=/Users/enu/aalto-dsg/instans-sparql-conformance-tests/suites
+ROOT=/Users/enu/aalto-dsg/aux/instans-sparql-conformance-tests
+SUITES=/Users/enu/aalto-dsg/aux/instans-sparql-conformance-tests/suites
 INSTANS_TEST_RESULTS=$(SUITES)/results.csv
-STATISTICS=/Users/enu/aalto-dsg/instans-sparql-conformance-tests/statistics
+STATISTICS=/Users/enu/aalto-dsg/aux/instans-sparql-conformance-tests/statistics
 LOG=$(SUITES)/LOG
 
-INSTANS_HOME=/Users/enu/aalto-dsg/instans
+INSTANS_HOME=../instans
 INSTANS=$(INSTANS_HOME)/bin/instans
 INSTANS_BIN=$(INSTANS_HOME)/bin/instans.bin
 
