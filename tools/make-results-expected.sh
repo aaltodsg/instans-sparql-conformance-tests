@@ -3,8 +3,9 @@ TOOLS=$(dirname $0)
 cd $TOOLS/..  > /dev/null
 ROOT=`pwd`
 
-[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files-to-copy"; exit 1)
-ALL_FILES=( `cat $TOOLS/result-files-to-copy` )
+FILES_FILE=$TOOLS/result-files-to-copy
+[ -f $FILES_FILE ] || (echo "Missing file $FILES_FILE"; exit 1)
+ALL_FILES=( `cat $FILES_FILE` )
 
 EXPECTED=$ROOT/expected
 mkdir -p $EXPECTED
