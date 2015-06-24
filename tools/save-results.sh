@@ -1,12 +1,15 @@
 #!/bin/bash
-ROOT=`(cd $(dirname $0)/..)`
-SUITES=$ROOT/suites
-STATISTICS=$ROOT/statistics
-SAVE=$ROOT/save/`date +%Y-%m-%dT%H:%M:%S`
+TOOLS=$(dirname $0)
+cd $TOOLS/..  > /dev/null
+ROOT=`pwd`
+[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files"; exit 1)
+ALL_FILES=( `cat $TOOLS/result-files-to-copy` )
+TIME=`date +%Y-%m-%dT%H:%M:%S`
+SAVE=$ROOT/save/$TIME
 mkdir -p $SAVE/suites $SAVE/statistics
-cp $SUITES/*.csv $SUITES/execution-time.txt $SAVE/suites > /dev/null 2>&1
-cp -a $STATISTICS $SAVE > /dev/null 2>&1
-rm $ROOT/save/latest
-ln -s $SAVE $ROOT/save/latest
-
-
+for FILE in "${ALL_FILES[@]}"; do
+    cp $FILE $SAVE/$FILE
+done
+tar -cvzf $ROOT/save/$TIME.tgz $ROOT/save/$TIME
+rm -rf $SAVE
+git add $ROOT/save/$TIME.tgz 

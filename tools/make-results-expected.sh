@@ -4,7 +4,7 @@ cd $TOOLS/..  > /dev/null
 ROOT=`pwd`
 
 [ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files"; exit 1)
-ALL_FILES=( `cat $TOOLS/result-files` )
+ALL_FILES=( `cat $TOOLS/result-files-to-copy` )
 
 EXPECTED=$ROOT/expected
 mkdir -p $EXPECTED $EXPECTED/statistics $EXPECTED/suites
