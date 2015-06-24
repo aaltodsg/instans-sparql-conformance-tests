@@ -207,7 +207,7 @@ check_counts(query_runnable_implemented_ran_compared, query_runnable_implemented
 msg('\nThis text is saved in {}.'.format(see(output_msgs, prefix='')))
 
 root=os.getcwd()
-msg('\nReferences (relative to {}'.format(root))
+msg('\nReferences')
 for i in range(len(refs)):
     msg('{:>4} {}'.format('[{}]'.format(i+1), refs[i].replace(root+'/', '')))
 sys.exit(0)
