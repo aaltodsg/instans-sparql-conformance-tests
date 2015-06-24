@@ -2,3 +2,4 @@ suites/data-r2
 suites/data-sparql11
 suites/LOG
 __pycache__
+statistics

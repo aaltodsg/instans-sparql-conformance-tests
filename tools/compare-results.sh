@@ -4,7 +4,7 @@ TOOLS=$(dirname $0)
 cd $TOOLS/..  > /dev/null
 ROOT=`pwd`
 EXPECTED=$ROOT/expected
-[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files"; exit 1)
+[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files-compare"; exit 1)
 ALL_FILES=( `cat $TOOLS/result-files-to-compare` )
 
 cmp_one_pair() {

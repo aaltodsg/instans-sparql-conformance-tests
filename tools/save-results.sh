@@ -2,11 +2,11 @@
 TOOLS=$(dirname $0)
 cd $TOOLS/..  > /dev/null
 ROOT=`pwd`
-[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files"; exit 1)
+[ -f $TOOLS/result-files ] || (echo "Missing file $TOOLS/result-files-to-copy"; exit 1)
 ALL_FILES=( `cat $TOOLS/result-files-to-copy` )
 TIME=`date +%Y-%m-%dT%H:%M:%S`
 SAVE=$ROOT/save/$TIME
-mkdir -p $SAVE/suites $SAVE/statistics
+mkdir -p $SAVE
 for FILE in "${ALL_FILES[@]}"; do
     cp $FILE $SAVE/$FILE
 done
