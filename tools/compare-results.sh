@@ -3,6 +3,7 @@ SEE_DIFFERENCES=$1
 TOOLS=$(dirname $0)
 cd $TOOLS/..  > /dev/null
 ROOT=`pwd`
+RESULTS=$ROOT/results
 EXPECTED=$ROOT/expected
 
 FILES_FILE=$TOOLS/result-files-to-compare
@@ -10,16 +11,22 @@ FILES_FILE=$TOOLS/result-files-to-compare
 ALL_FILES=( `cat $FILES_FILE` )
 
 cmp_one_pair() {
-    if cmp -s $ROOT/$1 $EXPECTED/$1; then
+    FILE1=$RESULTS/$1
+    FILE2=$EXPECTED/$1
+    if [ ! -f $FILE1 ]; then
+	echo "Missing file $FILE1"
+    elif [ ! -f $FILE2 ]; then
+	echo "Missing file $FILE2"
+    elif cmp -s $FILE1 $FILE2; then
 	echo "OK $1"
     elif [ "$SEE_DIFFERENCES" != "" ]; then
-	/bin/echo -n "Files $ROOT/$1 and $EXPECTED/$1 are different. Want to see the differences (y/n)? "
+	/bin/echo -n "Files $FILE1 and $FILE2 are different. Want to see the differences (y/n)? "
 	read a
 	if [ "$a" = "y" -o  "$a" = "yes" ]; then
-	    diff $ROOT/$1 $EXPECTED/$1 | less
+	    diff $FILE1 $FILE2 | less
 	fi
     else
-	echo "Files $ROOT/$1 and $EXPECTED/$1 are different."
+	echo "Files $FILE1 and $FILE2are different."
     fi
 }
 

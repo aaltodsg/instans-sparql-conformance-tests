@@ -2,7 +2,8 @@
 INSTANS_HOME=$1
 INSTANS=$2
 INSTANS_BIN=$3
-STATISTICS=$4
+RESULTS=$4
+mkdir -p $RESULTS
 cd $INSTANS_HOME
 {
 echo =============================
@@ -29,5 +30,5 @@ echo =============================
 echo git log:
 echo
 git log
-} > $STATISTICS/instans.info
+} > $RESULTS/instans.info
 

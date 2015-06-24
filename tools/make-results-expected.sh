@@ -10,19 +10,20 @@ ALL_FILES=( `cat $FILES_FILE` )
 EXPECTED=$ROOT/expected
 mkdir -p $EXPECTED
 if [ $# -eq 0 ]; then
-    SOURCE="."
+    RESULTS=results
 else
-    SOURCE=$1
+    RESULTS=$1
 fi
 
 echo "Checking the existence of the directories and files:"
 
 OK=yes
-if [ ! -d $SOURCE ]; then
-    echo "  Directory $SOURCE does not exist!"
+if [ ! -d $RESULTS ]; then
+    echo "  Directory $RESULTS does not exist!"
 fi
 
-for FILE in "${ALL_FILES[@]}"; do
+for NAME in "${ALL_FILES[@]}"; do
+    FILE=$RESULTS/$NAME
     if [ ! -f $FILE ]; then
 	echo "  $FILE is missing"
 	OK=no
@@ -36,10 +37,11 @@ else
     exit 1
 fi
 
-/bin/echo -n "Copy files in directory $SOURCE to directory $EXPECTED (y/n)? "
+/bin/echo -n "Copy files in directory $RESULTS to directory $EXPECTED (y/n)? "
 read a
 [ "$a" = "y" -o "$a" = "yes" ] || (echo "Not copying"; exit 1)
 
-for FILE in "${ALL_FILES[@]}"; do
-    cp $SOURCE/$FILE $EXPECTED/$FILE
+for NAME in "${ALL_FILES[@]}"; do
+    FILE=$RESULTS/$NAME
+    cp $RESULTS/$FILE $EXPECTED/$FILE
 done
