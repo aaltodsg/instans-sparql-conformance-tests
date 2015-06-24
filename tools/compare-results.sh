@@ -8,7 +8,7 @@ EXPECTED=$ROOT/expected
 ALL_FILES=( `cat $TOOLS/result-files` )
 
 cmp_one_pair() {
-    if cmp $ROOT/$1 $EXPECTED/$1; then
+    if cmp -s $ROOT/$1 $EXPECTED/$1; then
 	echo "OK $1"
     elif [ "$SEE_DIFFERENCES" != "" ]; then
 	/bin/echo -n "Files $ROOT/$1 and $EXPECTED/$1 are different. Want to see the differences (y/n)? "
