@@ -34,14 +34,17 @@ done
 if [ $OK = 'yes' ]; then
     echo "All files found"
 else
+    echo 'Missing files'
     exit 1
 fi
 
-/bin/echo -n "Copy files in directory $RESULTS to directory $EXPECTED (y/n)? "
-read a
-[ "$a" = "y" -o "$a" = "yes" ] || (echo "Not copying"; exit 1)
+# /bin/echo -n "Copy files in directory $RESULTS to directory $EXPECTED (y/n)? "
+# read a
+# [ "$a" = "y" -o "$a" = "yes" ] || (echo "Not copying"; exit 1)
 
 for NAME in "${ALL_FILES[@]}"; do
     FILE=$RESULTS/$NAME
-    cp $RESULTS/$FILE $EXPECTED/$FILE
+    echo "Copy $FILE to $EXPECTED/$NAME"
+    cp $FILE $EXPECTED/$NAME
 done
+echo "Done copying"

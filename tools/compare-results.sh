@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Comparing results"
 SEE_DIFFERENCES=$1
 TOOLS=$(dirname $0)
 cd $TOOLS/..  > /dev/null

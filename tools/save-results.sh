@@ -11,7 +11,6 @@ ALL_FILES=( `cat $FILES_FILE` )
 
 TIME=`date +%Y-%m-%dT%H:%M:%S`
 SAVE=$ROOT/save/$TIME
-mkdir -p $SAVE
 
 for FILE in "${ALL_FILES[@]}"; do
     cp $RESULTS/$FILE $SAVE/$FILE

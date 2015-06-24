@@ -2,15 +2,15 @@ ROOT=/Users/enu/aalto-dsg/instans-sparql-conformance-tests
 SUITES=/Users/enu/aalto-dsg/instans-sparql-conformance-tests/suites
 RESULTS=/Users/enu/aalto-dsg/instans-sparql-conformance-tests/results
 INSTANS_TEST_RESULTS=$(RESULTS)/results.csv
-LOG=$(SUITES)/LOG
+LOG=$(RESULTS)/LOG
 
 INSTANS_HOME=/Users/enu/aalto-dsg/instans
 INSTANS=$(INSTANS_HOME)/bin/instans
 INSTANS_BIN=$(INSTANS_HOME)/bin/instans.bin
 
-all: save-old instans-info results compare-to-prev
+all: save-old instans-info results compare
 
-full: makeinstans save-old instans-info results
+full: makeinstans save-old instans-info results compare
 
 makeinstans:
 	(cd $(INSTANS_HOME); make)
@@ -27,7 +27,7 @@ results: $(INSTANS_TEST_RESULTS)
 $(INSTANS_TEST_RESULTS): $(INSTANS_BIN)
 	tools/run-tests.sh $(INSTANS) $(ROOT) $(LOG)
 
-compare-to-prev:
+compare:
 	tools/compare-results.sh
 
 expected:
@@ -36,5 +36,5 @@ expected:
 clean:
 	-rm $(INSTANS_TEST_RESULTS) $(RESULTS)/*.csv
 
-.PHONY: results force save-old makeinstans full
+.PHONY: results force save-old makeinstans full expected compare
 

@@ -3,7 +3,6 @@ INSTANS_HOME=$1
 INSTANS=$2
 INSTANS_BIN=$3
 RESULTS=$4
-mkdir -p $RESULTS
 cd $INSTANS_HOME
 {
 echo =============================
