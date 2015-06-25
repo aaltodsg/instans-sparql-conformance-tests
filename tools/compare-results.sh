@@ -27,7 +27,7 @@ cmp_one_pair() {
 	    diff $FILE1 $FILE2 | less
 	fi
     else
-	echo "Files $FILE1 and $FILE2are different."
+	echo "Files $FILE1 and $FILE2 are different."
     fi
 }
 
