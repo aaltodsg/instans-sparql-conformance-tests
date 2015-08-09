@@ -2,6 +2,7 @@ LOG
 failed-implemented.csv
 failed-not-implemented.csv
 failed.csv
+not-failed.csv
 negative-syntax-parsed.csv
 not-implemented.csv
 positive-syntax-not-parsed.csv

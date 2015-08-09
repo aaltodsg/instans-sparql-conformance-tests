@@ -3,6 +3,7 @@ execution-time.txt
 failed-implemented.csv
 failed-not-implemented.csv
 failed.csv
+not-failed.csv
 instans.info
 negative-syntax-parsed.csv
 not-implemented.csv

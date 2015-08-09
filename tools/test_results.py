@@ -38,6 +38,7 @@ query_runnable_implemented_ran_undefined_file = os.path.join(output_dir, "query-
 query_runnable_implemented_ran_different_semantics_file = os.path.join(output_dir, "query-runnable-implemented-ran-different-semantics.csv")
 query_runnable_implemented_ran_not_compared_file = os.path.join(output_dir, "query-runnable-implemented-ran-not-compared.csv")
 query_runnable_implemented_ran_compared_undefined_file = os.path.join(output_dir, "query-runnable-implemented-ran-compared-undefined.csv")
+not_failed_file = os.path.join(output_dir, "not-failed.csv")
 failed_file = os.path.join(output_dir, "failed.csv")
 failed_undefined_file  = os.path.join(output_dir, "failed_undefined.csv")
 failed_implemented_file = os.path.join(output_dir, "failed-implemented.csv")
@@ -133,6 +134,7 @@ write_non_empty(query_runnable_not_implemented,query_runnable_not_implemented_fi
 write_non_empty(query_runnable_implemented_not_ran,query_runnable_implemented_not_ran_file)
 write_non_empty(query_runnable_implemented_ran_different_semantics,query_runnable_implemented_ran_different_semantics_file)
 write_non_empty(query_runnable_implemented_ran_not_compared,query_runnable_implemented_ran_not_compared_file)
+write_non_empty(not_failed,not_failed_file)
 write_non_empty(failed,failed_file)
 write_non_empty(failed_implemented,failed_implemented_file)
 write_non_empty(failed_not_implemented,failed_not_implemented_file)
@@ -153,7 +155,7 @@ if len(failed) > 0:
     msg('-------> {} tests failed.{}'.format(len(failed), see(failed_file)))
     msg('             * {} tests failed and were not implemented.{}'.format(len(failed_not_implemented), see(failed_not_implemented_file)))
     msg('-------------> {} tests failed and were implemented.{}'.format(len(failed_implemented), see(failed_implemented_file)))
-msg('       * {:>3} tests succeeded.'.format(len(not_failed)))
+msg('       * {:>3} tests succeeded.{}'.format(len(not_failed), see(not_failed_file)))
 check_counts(failed, not_failed, allsanstimes, 6, 'tests failed', 'tests not failed', 'allsanstimes tests', failed_undefined_file)
 
 
