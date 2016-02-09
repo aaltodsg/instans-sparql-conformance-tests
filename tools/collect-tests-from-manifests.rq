@@ -22,8 +22,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
 
        ?test mf:action ?queryfile1
        FILTER(!isblank(?queryfile1))
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
@@ -40,8 +40,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
        OPTIONAL { ?a qt:graphData ?graphfiles1 }
        OPTIONAL { ?test mf:result ?resultfile1 FILTER(!isblank(?resultfile1)) }
 
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
@@ -65,8 +65,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
        OPTIONAL { ?r1 ut:graphData [ ut:graph ?resultgraphfiles1; rdfs:label ?resultgraphlabels ] }
        OPTIONAL { ?r1 ut:result ?updateresult }
 
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 
@@ -87,8 +87,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
        OPTIONAL { ?a qt:data ?datafile1 }
        OPTIONAL { ?test mf:result ?resultfile1 FILTER(!isblank(?resultfile1)) }
 
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
        BIND(strafter(str(?queryfile1), ?base) AS ?queryfile)
@@ -100,8 +100,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
 SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:ProtocolTest)
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 };
@@ -110,8 +110,8 @@ SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?gr
 SELECT ?base ?type ?suite ?collection ?name ?queryfile ?datafile ?graphfiles ?graphlabels ?resultfile ?resultgraphfiles ?resultgraphlabels ?updateresult ?queryserviceendpoint ?queryservicedata ?entailmentprofile ?entailmentregime WHERE {
        ?test rdf:type ?type
        FILTER(?type = mf:ServiceDescriptionTest)
-       BIND(strbefore(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
-       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aalto-dsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
+       BIND(strbefore(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/") AS ?suite)
+       BIND(strbefore(strafter(strafter(str(<>), "/Users/enu/aaltodsg/sparql-conformance-tests-for-instans/suites/"), "/"),"/") AS ?collection)
        BIND(strafter(str(?test), "#") AS ?name)
        BIND(str(<>) AS ?base)
 };
