@@ -33,6 +33,7 @@ query_not_runnable_file = os.path.join(output_dir, "query-not-runnable.csv")
 query_runnable_undefined_file = os.path.join(output_dir, "query-runnable-undefined.csv")
 query_runnable_not_implemented_file = os.path.join(output_dir, "query-runnable-not-implemented.csv")
 query_runnable_implemented_undefined_file = os.path.join(output_dir, "query-runnable-implemented-undefined.csv")
+query_runnable_implemented_crashed_file = os.path.join(output_dir, "query-runnable-implemented-crashed.csv")
 query_runnable_implemented_not_ran_file = os.path.join(output_dir, "query-runnable-implemented-not-ran.csv")
 query_runnable_implemented_ran_undefined_file = os.path.join(output_dir, "query-runnable-implemented-ran-undefined.csv")
 query_runnable_implemented_ran_different_semantics_file = os.path.join(output_dir, "query-runnable-implemented-ran-different-semantics.csv")
@@ -111,6 +112,7 @@ query_not_runnable = query.minus(positive_syntax_parsed_translated_initialized)
 query_runnable = query.intersection(positive_syntax_parsed_translated_initialized)
 query_runnable_not_implemented = query_runnable.select(lambda r: r['implementedp'] != 'True')
 query_runnable_implemented = query_runnable.select(lambda r: r['implementedp'] == 'True')
+query_runnable_implemented_crashed = query_runnable_implemented.select(lambda r: r['running-crashed-p'] == 'True')
 query_runnable_implemented_not_ran = query_runnable_implemented.select(lambda r: r['running-succeeded-p'] == 'False')
 query_runnable_implemented_ran = query_runnable_implemented.select(lambda r: r['running-succeeded-p'] == 'True')
 query_runnable_implemented_ran_different_semantics = query_runnable_implemented_ran.select(lambda r: r['different-semantics-p'] == 'True')
@@ -131,6 +133,7 @@ write_non_empty(positive_syntax_parsed_not_translated,positive_syntax_parsed_not
 write_non_empty(positive_syntax_parsed_translated_not_initialized,positive_syntax_parsed_translated_not_initialized_file)
 write_non_empty(query_not_runnable,query_not_runnable_file)
 write_non_empty(query_runnable_not_implemented,query_runnable_not_implemented_file)
+write_non_empty(query_runnable_implemented_crashed,query_runnable_implemented_crashed_file)
 write_non_empty(query_runnable_implemented_not_ran,query_runnable_implemented_not_ran_file)
 write_non_empty(query_runnable_implemented_ran_different_semantics,query_runnable_implemented_ran_different_semantics_file)
 write_non_empty(query_runnable_implemented_ran_not_compared,query_runnable_implemented_ran_not_compared_file)
@@ -197,6 +200,13 @@ check_counts(query_runnable_implemented, query_runnable_not_implemented, query_r
 
 if len(query_runnable_implemented_not_ran) > 0:
     msg('------------------> {:>3} query runnable evaluation tests fully implemented in INSTANS, but dit not run!{}'.format(len(query_runnable_implemented_not_ran), see(query_runnable_implemented_not_ran_file)))
+else:
+    msg('                    All query runnable evaluation tests fully implemented in INSTANS ran')
+    
+if len(query_runnable_implemented_crashed) > 0:
+    msg('------------------> {:>3} query runnable evaluation tests fully implemented in INSTANS crashed!{}'.format(len(query_runnable_implemented_crashed), see(query_runnable_implemented_crashed_file)))
+else:
+    msg('                    No query runnable tests crashed')
 msg('                  * {:>3} query runnable evaluation tests implemented and ran.'.format(len(query_runnable_implemented_ran)))
 check_counts(query_runnable_implemented_ran, query_runnable_implemented_not_ran, query_runnable_implemented, 18, 'query runnable implemented ran', 'query runnable implemented not ran', 'query runnable implemented', query_runnable_implemented_ran_undefined_file)
 
