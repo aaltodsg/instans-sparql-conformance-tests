@@ -80,26 +80,45 @@ clean:
 
 EOF
 } > Makefile
+cd download
+if test ! -d rdfconvert-0.4 ; then
+    unzip rdfconvert-0.4-bin.zip
+fi
+cd ..
 mkdir -p $SUITES
 cd $SUITES
+if test ! -d rdf-tests; then
+    echo "Cloning new rdf-tests"
+    git clone https://github.com/w3c/rdf-tests.git
+fi
 if test -d data-r2; then
     echo "data-r2 already exists, skipping downloading it" > /dev/null
 else
-    echo "Downloading http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz"
-    curl -s -O http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz
-    tar -xzf data-r2.tar.gz test-suite-archive/data-r2
-    echo "Moving test-suite-archive/data-r2 to data-r2"
-    mv test-suite-archive/data-r2 .
-    rm -rf test-suite-archive data-r2.tar.gz
+    # echo "Downloading http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz"
+    # curl -s -O http://www.w3.org/2001/sw/DataAccess/tests/data-r2.tar.gz
+    # tar -xzf data-r2.tar.gz test-suite-archive/data-r2
+    # echo "Moving test-suite-archive/data-r2 to data-r2"
+    # mv test-suite-archive/data-r2 .
+    # rm -rf test-suite-archive data-r2.tar.gz
+    cp -a rdf-tests/sparql11/data-r2 .
+    for f in data-r2/**/*.rdf; do
+	echo "Converting $f to ${f%.rdf}.ttl"
+	../download/rdfconvert-0.4/bin/rdfconvert.sh -i RDF/XML -o Turtle $f ${f%.rdf}.ttl
+    done
 fi
 if test -d data-sparql11; then
     echo "data-sparql11 already exists, skipping downloading it" > /dev/null
 else
-    echo "Downloading http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz"
-    curl -s -O http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz
-    tar -xzf sparql11-test-suite-20121023.tar.gz
-    echo "Moving sparql11-test-suite to data-sparql11"
-    mv sparql11-test-suite data-sparql11
-    rm sparql11-test-suite-20121023.tar.gz 
+    # echo "Downloading http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz"
+    # curl -s -O http://www.w3.org/2009/sparql/docs/tests/sparql11-test-suite-20121023.tar.gz
+    # tar -xzf sparql11-test-suite-20121023.tar.gz
+    # echo "Moving sparql11-test-suite to data-sparql11"
+    # mv sparql11-test-suite data-sparql11
+    # rm sparql11-test-suite-20121023.tar.gz 
+    cp -a rdf-tests/sparql11/data-sparql11 .
+    for f in data-sparql11/**/*.rdf; do
+	echo "Converting $f to ${f%.rdf}.ttl"
+	../download/rdfconvert-0.4/bin/rdfconvert.sh -i RDF/XML -o Turtle $f ${f%.rdf}.ttl
+    done
 fi
 echo "Done."

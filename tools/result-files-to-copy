@@ -15,6 +15,8 @@ query-not-runnable.csv
 query-runnable-implemented-ran-different-semantics.csv
 query-runnable-implemented-ran-not-compared.csv
 query-runnable-implemented-ran-undefined.csv
+query-runnable-implemented-not-ran.csv
+query-runnable-implemented-crashed.csv
 query-runnable-not-implemented.csv
 results-sans-times.csv
 results.csv
